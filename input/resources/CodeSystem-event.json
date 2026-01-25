@@ -1,0 +1,6210 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "event",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-event.html\"><code>http://terminology.hl7.org/v2plusvocab/CodeSystem/event</code></a></li></ul></div>"
+  },
+  "extension": [ {
+    "url": "http://terminology.hl7.org/v2plusvocab/StructureDefinition/codesystem-v2versionCreated",
+    "valueString": "2.9"
+  }, {
+    "url": "http://terminology.hl7.org/v2plusvocab/StructureDefinition/codesystem-versionHistory",
+    "valueString": "generate correct history somehow"
+  }, {
+    "url": "http://terminology.hl7.org/v2plusvocab/StructureDefinition/codesystem-tableNo",
+    "valueString": "0003"
+  } ],
+  "url": "http://terminology.hl7.org/v2plusvocab/CodeSystem/event",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.18.4"
+  } ],
+  "version": "1.11.0",
+  "name": "Event",
+  "title": "Event (2.9 - 1.11.0)",
+  "status": "active",
+  "experimental": true,
+  "publisher": "HL7 Inc., 2026",
+  "description": "HL7-defined code system of concepts specifying the trigger event for Version 2.x interface messages.  Used in HL7 Version 2.x messaging in the MSH segment.",
+  "copyright": "HL7 Inc., 2026",
+  "caseSensitive": true,
+  "compositional": false,
+  "content": "complete",
+  "property": [ {
+    "code": "versionIntroduced",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#versionIntroduced",
+    "description": "version when was this code introduced",
+    "type": "string"
+  }, {
+    "code": "versionDeprecated",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#versionDeprecated",
+    "description": "version when was this code deprecated",
+    "type": "string"
+  }, {
+    "code": "status",
+    "uri": "http://hl7.org/fhir/concept-properties#status",
+    "description": "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type": "code"
+  }, {
+    "code": "comment",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#comment",
+    "description": "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type": "string"
+  }, {
+    "code": "usage",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#usage",
+    "description": "usage notes for this code",
+    "type": "string"
+  }, {
+    "code": "modified",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#modified",
+    "description": "date of last modification",
+    "type": "dateTime"
+  }, {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-property-valueset",
+      "valueCanonical": "http://terminology.hl7.org/v2plusvocab/ValueSet/hl7VShl7VSmessageStructure"
+    } ],
+    "code": "msgstruct",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#msgstruct",
+    "description": "msgstruct",
+    "type": "code"
+  }, {
+    "extension": [ {
+      "url": "http://hl7.org/fhir/StructureDefinition/codesystem-property-valueset",
+      "valueCanonical": "http://terminology.hl7.org/v2plusvocab/ValueSet/hl7VShl7VSmessageType"
+    } ],
+    "code": "msgtype",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#msgtype",
+    "description": "msgtype",
+    "type": "code"
+  } ],
+  "concept": [ {
+    "code": "A01",
+    "display": "ADT/ACK - Admit/visit notification",
+    "definition": "ADT/ACK - Admit/visit notification",
+    "designation": [ {
+      "language": "de",
+      "value": "stationäre Aufnahme"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A01"
+    } ]
+  }, {
+    "code": "A02",
+    "display": "ADT/ACK - Transfer a patient",
+    "definition": "ADT/ACK - Transfer a patient",
+    "designation": [ {
+      "language": "de",
+      "value": "Verlegung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A02"
+    } ]
+  }, {
+    "code": "A03",
+    "display": "ADT/ACK -  Discharge/end visit",
+    "definition": "ADT/ACK -  Discharge/end visit",
+    "designation": [ {
+      "language": "de",
+      "value": "Entlassung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A03"
+    } ]
+  }, {
+    "code": "A04",
+    "display": "ADT/ACK -  Register a patient",
+    "definition": "ADT/ACK -  Register a patient",
+    "designation": [ {
+      "language": "de",
+      "value": "Besuchsmeldung (nicht-stationär)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A01"
+    } ]
+  }, {
+    "code": "A05",
+    "display": "ADT/ACK -  Pre-admit a patient",
+    "definition": "ADT/ACK -  Pre-admit a patient",
+    "designation": [ {
+      "language": "de",
+      "value": "Voraufnahme eines Patienten"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A05"
+    } ]
+  }, {
+    "code": "A06",
+    "display": "ADT/ACK -  Change an outpatient to an inpatient",
+    "definition": "ADT/ACK -  Change an outpatient to an inpatient",
+    "designation": [ {
+      "language": "de",
+      "value": "Änderung von ambulant in stationär"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A06"
+    } ]
+  }, {
+    "code": "A07",
+    "display": "ADT/ACK -  Change an inpatient to an outpatient",
+    "definition": "ADT/ACK -  Change an inpatient to an outpatient",
+    "designation": [ {
+      "language": "de",
+      "value": "Änderung von stationär in ambulant"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A06"
+    } ]
+  }, {
+    "code": "A08",
+    "display": "ADT/ACK -  Update patient information",
+    "definition": "ADT/ACK -  Update patient information",
+    "designation": [ {
+      "language": "de",
+      "value": "Änderung von Patienteninformationen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A01"
+    } ]
+  }, {
+    "code": "A09",
+    "display": "ADT/ACK -  Patient departing - tracking",
+    "definition": "ADT/ACK -  Patient departing - tracking",
+    "designation": [ {
+      "language": "de",
+      "value": "Patient verläßt Einrichtung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A09"
+    } ]
+  }, {
+    "code": "A10",
+    "display": "ADT/ACK -  Patient arriving - tracking",
+    "definition": "ADT/ACK -  Patient arriving - tracking",
+    "designation": [ {
+      "language": "de",
+      "value": "Patient erreicht Einrichtung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A09"
+    } ]
+  }, {
+    "code": "A11",
+    "display": "ADT/ACK -  Cancel admit/visit notification",
+    "definition": "ADT/ACK -  Cancel admit/visit notification",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung für A01 und A04"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A09"
+    } ]
+  }, {
+    "code": "A12",
+    "display": "ADT/ACK -  Cancel transfer",
+    "definition": "ADT/ACK -  Cancel transfer",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung für A02"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A12"
+    } ]
+  }, {
+    "code": "A13",
+    "display": "ADT/ACK -  Cancel discharge/end visit",
+    "definition": "ADT/ACK -  Cancel discharge/end visit",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung für A03"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A01"
+    } ]
+  }, {
+    "code": "A14",
+    "display": "ADT/ACK -  Pending admit",
+    "definition": "ADT/ACK -  Pending admit",
+    "designation": [ {
+      "language": "de",
+      "value": "Geplante Aufnahme"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A05"
+    } ]
+  }, {
+    "code": "A15",
+    "display": "ADT/ACK -  Pending transfer",
+    "definition": "ADT/ACK -  Pending transfer",
+    "designation": [ {
+      "language": "de",
+      "value": "Geplante Verlegung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A15"
+    } ]
+  }, {
+    "code": "A16",
+    "display": "ADT/ACK -  Pending discharge",
+    "definition": "ADT/ACK -  Pending discharge",
+    "designation": [ {
+      "language": "de",
+      "value": "Geplante Entlassung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A16"
+    } ]
+  }, {
+    "code": "A17",
+    "display": "ADT/ACK -  Swap patients",
+    "definition": "ADT/ACK -  Swap patients",
+    "designation": [ {
+      "language": "de",
+      "value": "Bettentausch zweier Patienten"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A17"
+    } ]
+  }, {
+    "code": "A18",
+    "display": "ADT/ACK -  Merge patient information",
+    "definition": "ADT/ACK -  Merge patient information",
+    "designation": [ {
+      "language": "de",
+      "value": "Patienteninformation zusammenführen"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    } ]
+  }, {
+    "code": "A19",
+    "display": "QRY/ADR -  Patient query",
+    "definition": "QRY/ADR -  Patient query",
+    "designation": [ {
+      "language": "de",
+      "value": "Anfrage nach Patientendaten"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    } ]
+  }, {
+    "code": "A20",
+    "display": "ADT/ACK -  Bed status update",
+    "definition": "ADT/ACK -  Bed status update",
+    "designation": [ {
+      "language": "de",
+      "value": "Änderung des Bettenstatus"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A20"
+    } ]
+  }, {
+    "code": "A21",
+    "display": "ADT/ACK -  Patient goes on a \"leave of absence\"",
+    "definition": "ADT/ACK -  Patient goes on a \"leave of absence\"",
+    "designation": [ {
+      "language": "de",
+      "value": "Beginn einer Patientenabwesenheit"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A21"
+    } ]
+  }, {
+    "code": "A22",
+    "display": "ADT/ACK -  Patient returns from a \"leave of absence\"",
+    "definition": "ADT/ACK -  Patient returns from a \"leave of absence\"",
+    "designation": [ {
+      "language": "de",
+      "value": "Ende einer Patientenabwesenheit"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A21"
+    } ]
+  }, {
+    "code": "A23",
+    "display": "ADT/ACK -  Delete a patient record",
+    "definition": "ADT/ACK -  Delete a patient record",
+    "designation": [ {
+      "language": "de",
+      "value": "Löschen eines Patientensatzes"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A21"
+    } ]
+  }, {
+    "code": "A24",
+    "display": "ADT/ACK -  Link patient information",
+    "definition": "ADT/ACK -  Link patient information",
+    "designation": [ {
+      "language": "de",
+      "value": "Verknüpfen von Patientendaten"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A24"
+    } ]
+  }, {
+    "code": "A25",
+    "display": "ADT/ACK -  Cancel pending discharge",
+    "definition": "ADT/ACK -  Cancel pending discharge",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung einer eingeleiteten Entlassung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A21"
+    } ]
+  }, {
+    "code": "A26",
+    "display": "ADT/ACK -  Cancel pending transfer",
+    "definition": "ADT/ACK -  Cancel pending transfer",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung einer eingeleiteten Verlegung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A21"
+    } ]
+  }, {
+    "code": "A27",
+    "display": "ADT/ACK -  Cancel pending admit",
+    "definition": "ADT/ACK -  Cancel pending admit",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung einer eingeleiteten Aufnahme"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A21"
+    } ]
+  }, {
+    "code": "A28",
+    "display": "ADT/ACK -  Add person information",
+    "definition": "ADT/ACK -  Add person information",
+    "designation": [ {
+      "language": "de",
+      "value": "Personendaten hinzufügen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A05"
+    } ]
+  }, {
+    "code": "A29",
+    "display": "ADT/ACK -  Delete person information",
+    "definition": "ADT/ACK -  Delete person information",
+    "designation": [ {
+      "language": "de",
+      "value": "Löschung von personenbezogenen Daten"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A21"
+    } ]
+  }, {
+    "code": "A30",
+    "display": "ADT/ACK -  Merge person information",
+    "definition": "ADT/ACK -  Merge person information",
+    "designation": [ {
+      "language": "de",
+      "value": "veraltet"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    } ]
+  }, {
+    "code": "A31",
+    "display": "ADT/ACK -  Update person information",
+    "definition": "ADT/ACK -  Update person information",
+    "designation": [ {
+      "language": "de",
+      "value": "Ändern personenbezogener Daten"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A05"
+    } ]
+  }, {
+    "code": "A32",
+    "display": "ADT/ACK -  Cancel patient arriving - tracking",
+    "definition": "ADT/ACK -  Cancel patient arriving - tracking",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung eines Patientenzugangs (Bettenzuweisung)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A21"
+    } ]
+  }, {
+    "code": "A33",
+    "display": "ADT/ACK -  Cancel patient departing - tracking",
+    "definition": "ADT/ACK -  Cancel patient departing - tracking",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung eines Patientenabgangs (Bettenfreigabe)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A21"
+    } ]
+  }, {
+    "code": "A34",
+    "display": "ADT/ACK -  Merge patient information - patient ID only",
+    "definition": "ADT/ACK -  Merge patient information - patient ID only",
+    "designation": [ {
+      "language": "de",
+      "value": "Abgleich nur der Patientennummer (veraltet)"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    } ]
+  }, {
+    "code": "A35",
+    "display": "ADT/ACK -  Merge patient information - account number only",
+    "definition": "ADT/ACK -  Merge patient information - account number only",
+    "designation": [ {
+      "language": "de",
+      "value": "Abgleich nur der Abrechnungsnummer / Debitorenkontonummer (veraltet)"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    } ]
+  }, {
+    "code": "A36",
+    "display": "ADT/ACK -  Merge patient information - patient ID and account number",
+    "definition": "ADT/ACK -  Merge patient information - patient ID and account number",
+    "designation": [ {
+      "language": "de",
+      "value": "Abgleich von Patientennummer und Abrechnungsnummer / Debitorenkontonummer (veraltet)"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    } ]
+  }, {
+    "code": "A37",
+    "display": "ADT/ACK -  Unlink patient information",
+    "definition": "ADT/ACK -  Unlink patient information",
+    "designation": [ {
+      "language": "de",
+      "value": "Auflösung einer Verknüpfung von Patientendaten"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A37"
+    } ]
+  }, {
+    "code": "A38",
+    "display": "ADT/ACK - Cancel pre-admit",
+    "definition": "ADT/ACK - Cancel pre-admit",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung zu A05"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A38"
+    } ]
+  }, {
+    "code": "A39",
+    "display": "ADT/ACK - Merge person - patient ID",
+    "definition": "ADT/ACK - Merge person - patient ID",
+    "designation": [ {
+      "language": "de",
+      "value": "Zusammenführung von Information über externe ID (veraltet)"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "A40",
+    "display": "ADT/ACK - Merge patient - patient identifier list",
+    "definition": "ADT/ACK - Merge patient - patient identifier list",
+    "designation": [ {
+      "language": "de",
+      "value": "Zusammenführung v. Pat-Information über ID-Liste"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A39"
+    } ]
+  }, {
+    "code": "A41",
+    "display": "ADT/ACK - Merge account - patient account number",
+    "definition": "ADT/ACK - Merge account - patient account number",
+    "designation": [ {
+      "language": "de",
+      "value": "Zusammenführung von Konten über Kontonummer"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A39"
+    } ]
+  }, {
+    "code": "A42",
+    "display": "ADT/ACK - Merge visit - visit number",
+    "definition": "ADT/ACK - Merge visit - visit number",
+    "designation": [ {
+      "language": "de",
+      "value": "Zusammenführung v.Fall-Information über Fallnummer"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A39"
+    } ]
+  }, {
+    "code": "A43",
+    "display": "ADT/ACK - Move patient information - patient identifier list",
+    "definition": "ADT/ACK - Move patient information - patient identifier list",
+    "designation": [ {
+      "language": "de",
+      "value": "Korrektur einer falschen Zuordnung bzgl. PID-Liste"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A43"
+    } ]
+  }, {
+    "code": "A44",
+    "display": "ADT/ACK - Move account information - patient account number",
+    "definition": "ADT/ACK - Move account information - patient account number",
+    "designation": [ {
+      "language": "de",
+      "value": "Korrektur einer falschen Zuordnung bzgl.Abrechungsnummer"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A44"
+    } ]
+  }, {
+    "code": "A45",
+    "display": "ADT/ACK - Move visit information - visit number",
+    "definition": "ADT/ACK - Move visit information - visit number",
+    "designation": [ {
+      "language": "de",
+      "value": "Korrektur einer falschen Zuordnung bzgl.Fallnummer"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A45"
+    } ]
+  }, {
+    "code": "A46",
+    "display": "ADT/ACK - Change patient ID",
+    "definition": "ADT/ACK - Change patient ID",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "A47",
+    "display": "ADT/ACK - Change patient identifier list",
+    "definition": "ADT/ACK - Change patient identifier list",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A44"
+    } ]
+  }, {
+    "code": "A48",
+    "display": "ADT/ACK - Change alternate patient ID",
+    "definition": "ADT/ACK - Change alternate patient ID",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "A49",
+    "display": "ADT/ACK - Change patient account number",
+    "definition": "ADT/ACK - Change patient account number",
+    "designation": [ {
+      "language": "de",
+      "value": "Änderung der Abrechungsnummer (PID-18)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A43"
+    } ]
+  }, {
+    "code": "A50",
+    "display": "ADT/ACK - Change visit number",
+    "definition": "ADT/ACK - Change visit number",
+    "designation": [ {
+      "language": "de",
+      "value": "Änderung der Fallnummer (PV1-19)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A50"
+    } ]
+  }, {
+    "code": "A51",
+    "display": "ADT/ACK - Change alternate visit ID",
+    "definition": "ADT/ACK - Change alternate visit ID",
+    "designation": [ {
+      "language": "de",
+      "value": "Änderung der alternativen Fallnummer (PV1-50)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A50"
+    } ]
+  }, {
+    "code": "A52",
+    "display": "ADT/ACK - Cancel leave of absence for a patient",
+    "definition": "ADT/ACK - Cancel leave of absence for a patient",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A52"
+    } ]
+  }, {
+    "code": "A53",
+    "display": "ADT/ACK - Cancel patient returns from a leave of absence",
+    "definition": "ADT/ACK - Cancel patient returns from a leave of absence",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A52"
+    } ]
+  }, {
+    "code": "A54",
+    "display": "ADT/ACK - Change attending doctor",
+    "definition": "ADT/ACK - Change attending doctor",
+    "designation": [ {
+      "language": "de",
+      "value": "Änderung des behandelnden Arztes"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A54"
+    } ]
+  }, {
+    "code": "A55",
+    "display": "ADT/ACK - Cancel change attending doctor",
+    "definition": "ADT/ACK - Cancel change attending doctor",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung der Änderung des behandelnden Arztes"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A54"
+    } ]
+  }, {
+    "code": "A60",
+    "display": "ADT/ACK - Update allergy information",
+    "definition": "ADT/ACK - Update allergy information",
+    "designation": [ {
+      "language": "de",
+      "value": "Aktualisierung der Allergie-Informationen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A60"
+    } ]
+  }, {
+    "code": "A61",
+    "display": "ADT/ACK - Change consulting doctor",
+    "definition": "ADT/ACK - Change consulting doctor",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A61"
+    } ]
+  }, {
+    "code": "A62",
+    "display": "ADT/ACK - Cancel change consulting doctor",
+    "definition": "ADT/ACK - Cancel change consulting doctor",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ADT_A61"
+    } ]
+  }, {
+    "code": "B01",
+    "display": "PMU/ACK - Add personnel record",
+    "definition": "PMU/ACK - Add personnel record",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PMU_B01"
+    } ]
+  }, {
+    "code": "B02",
+    "display": "PMU/ACK - Update personnel record",
+    "definition": "PMU/ACK - Update personnel record",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PMU_B01"
+    } ]
+  }, {
+    "code": "B03",
+    "display": "PMU/ACK - Delete personnel re cord",
+    "definition": "PMU/ACK - Delete personnel re cord",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PMU_B03"
+    } ]
+  }, {
+    "code": "B04",
+    "display": "PMU/ACK - Active practicing person",
+    "definition": "PMU/ACK - Active practicing person",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PMU_B04"
+    } ]
+  }, {
+    "code": "B05",
+    "display": "PMU/ACK - Deactivate practicing person",
+    "definition": "PMU/ACK - Deactivate practicing person",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PMU_B04"
+    } ]
+  }, {
+    "code": "B06",
+    "display": "PMU/ACK - Terminate practicing person",
+    "definition": "PMU/ACK - Terminate practicing person",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PMU_B04"
+    } ]
+  }, {
+    "code": "B07",
+    "display": "PMU/ACK - Grant Certificate/Permission",
+    "definition": "PMU/ACK - Grant Certificate/Permission",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PMU_B07"
+    } ]
+  }, {
+    "code": "B08",
+    "display": "PMU/ACK - Revoke Certificate/Permission",
+    "definition": "PMU/ACK - Revoke Certificate/Permission",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PMU_B08"
+    } ]
+  }, {
+    "code": "C01",
+    "display": "CRM - Register a patient on a clinical trial",
+    "definition": "CRM - Register a patient on a clinical trial",
+    "designation": [ {
+      "language": "de",
+      "value": "Registrierung eines Patienten f.eine klin.Studie"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CRM_C01"
+    } ]
+  }, {
+    "code": "C02",
+    "display": "CRM - Cancel a patient registration on clinical trial (for clerical mistakes only)",
+    "definition": "CRM - Cancel a patient registration on clinical trial (for clerical mistakes only)",
+    "designation": [ {
+      "language": "de",
+      "value": "Löschung der Registrierung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CRM_C01"
+    } ]
+  }, {
+    "code": "C03",
+    "display": "CRM - Correct/update registration information",
+    "definition": "CRM - Correct/update registration information",
+    "designation": [ {
+      "language": "de",
+      "value": "Korrektur/Änderung der Registrierung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CRM_C01"
+    } ]
+  }, {
+    "code": "C04",
+    "display": "CRM - Patient has gone off a clinical trial",
+    "definition": "CRM - Patient has gone off a clinical trial",
+    "designation": [ {
+      "language": "de",
+      "value": "Patient ist aus der Studie ausgeschieden"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CRM_C01"
+    } ]
+  }, {
+    "code": "C05",
+    "display": "CRM - Patient enters phase of clinical trial",
+    "definition": "CRM - Patient enters phase of clinical trial",
+    "designation": [ {
+      "language": "de",
+      "value": "Patient tritt in Studienphase ein"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CRM_C01"
+    } ]
+  }, {
+    "code": "C06",
+    "display": "CRM - Cancel patient entering a phase (clerical mistake)",
+    "definition": "CRM - Cancel patient entering a phase (clerical mistake)",
+    "designation": [ {
+      "language": "de",
+      "value": "Löschung des Eintritts in eine Studienphase"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CRM_C01"
+    } ]
+  }, {
+    "code": "C07",
+    "display": "CRM - Correct/update phase information",
+    "definition": "CRM - Correct/update phase information",
+    "designation": [ {
+      "language": "de",
+      "value": "Korrektur/Änderung der Angaben zur Studienphase"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CRM_C01"
+    } ]
+  }, {
+    "code": "C08",
+    "display": "CRM - Patient has gone off phase of clinical trial",
+    "definition": "CRM - Patient has gone off phase of clinical trial",
+    "designation": [ {
+      "language": "de",
+      "value": "Patient ist aus Studienphase ausgeschieden"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CRM_C01"
+    } ]
+  }, {
+    "code": "C09",
+    "display": "CSU - Automated time intervals for reporting, like monthly",
+    "definition": "CSU - Automated time intervals for reporting, like monthly",
+    "designation": [ {
+      "language": "de",
+      "value": "Festlegung des Zeitintervalls für autom. Berichte"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CSU_C09"
+    } ]
+  }, {
+    "code": "C10",
+    "display": "CSU - Patient completes the clinical trial",
+    "definition": "CSU - Patient completes the clinical trial",
+    "designation": [ {
+      "language": "de",
+      "value": "Patient beendet Studie"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CSU_C09"
+    } ]
+  }, {
+    "code": "C11",
+    "display": "CSU - Patient completes a phase of the clinical trial",
+    "definition": "CSU - Patient completes a phase of the clinical trial",
+    "designation": [ {
+      "language": "de",
+      "value": "Patient beendet eine Studienphase"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CSU_C09"
+    } ]
+  }, {
+    "code": "C12",
+    "display": "CSU - Update/correction of patient order/result information",
+    "definition": "CSU - Update/correction of patient order/result information",
+    "designation": [ {
+      "language": "de",
+      "value": "Korrektur/Änderung von Anforderungen/Ergebnissen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CSU_C09"
+    } ]
+  }, {
+    "code": "CNQ",
+    "display": "Cancel Query",
+    "definition": "Cancel Query",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung einer Anfrage"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-09-24"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "E01",
+    "display": "Submit HealthCare Services Invoice",
+    "definition": "Submit HealthCare Services Invoice",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "EHC_E01"
+    } ]
+  }, {
+    "code": "E02",
+    "display": "Cancel HealthCare Services Invoice",
+    "definition": "Cancel HealthCare Services Invoice",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "EHC_E02"
+    } ]
+  }, {
+    "code": "E03",
+    "display": "HealthCare Services Invoice Status",
+    "definition": "HealthCare Services Invoice Status",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QBP_E03"
+    } ]
+  }, {
+    "code": "E04",
+    "display": "Re-Assess HealthCare Services Invoice Request",
+    "definition": "Re-Assess HealthCare Services Invoice Request",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "EHC_E04"
+    } ]
+  }, {
+    "code": "E10",
+    "display": "Edit/Adjudication Results",
+    "definition": "Edit/Adjudication Results",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "EHC_E10"
+    } ]
+  }, {
+    "code": "E12",
+    "display": "Request Additional Information",
+    "definition": "Request Additional Information",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "EHC_E12"
+    } ]
+  }, {
+    "code": "E13",
+    "display": "Additional Information Response",
+    "definition": "Additional Information Response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "EHC_E13"
+    } ]
+  }, {
+    "code": "E15",
+    "display": "Payment/Remittance Advice",
+    "definition": "Payment/Remittance Advice",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "EHC_E15"
+    } ]
+  }, {
+    "code": "E20",
+    "display": "Submit Authorization Request",
+    "definition": "Submit Authorization Request",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "EHC_E20"
+    } ]
+  }, {
+    "code": "E21",
+    "display": "Cancel Authorization Request",
+    "definition": "Cancel Authorization Request",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "EHC_E21"
+    } ]
+  }, {
+    "code": "E22",
+    "display": "Authorization Request Status",
+    "definition": "Authorization Request Status",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QBP_E22"
+    } ]
+  }, {
+    "code": "E24",
+    "display": "Authorization Response",
+    "definition": "Authorization Response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "EHC_E24"
+    } ]
+  }, {
+    "code": "E30",
+    "display": "Submit Health Document related to Authorization Request",
+    "definition": "Submit Health Document related to Authorization Request",
+    "property": [ {
+      "code": "comment",
+      "valueString": "reserved for future/not yet defined"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    } ]
+  }, {
+    "code": "E31",
+    "display": "Cancel Health Document related to Authorization Request",
+    "definition": "Cancel Health Document related to Authorization Request",
+    "property": [ {
+      "code": "comment",
+      "valueString": "reserved for future/not yet defined"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    } ]
+  }, {
+    "code": "I01",
+    "display": "RQI/RPI - Request for insurance information",
+    "definition": "RQI/RPI - Request for insurance information",
+    "designation": [ {
+      "language": "de",
+      "value": "Anforderung von Versicherungsdaten"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RQI_I01"
+    } ]
+  }, {
+    "code": "I02",
+    "display": "RQI/RPL - Request/receipt of patient selection display list",
+    "definition": "RQI/RPL - Request/receipt of patient selection display list",
+    "designation": [ {
+      "language": "de",
+      "value": "Anforderg.einer Patientenauswahlliste (zur Anzeige)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RQI_I01"
+    } ]
+  }, {
+    "code": "I03",
+    "display": "RQI/RPR - Request/receipt of patient selection list",
+    "definition": "RQI/RPR - Request/receipt of patient selection list",
+    "designation": [ {
+      "language": "de",
+      "value": "Anforderg.einer strukt. Patientenauswahlliste"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RQI_I01"
+    } ]
+  }, {
+    "code": "I04",
+    "display": "RQD/RPI - Request for patient demographic data",
+    "definition": "RQD/RPI - Request for patient demographic data",
+    "designation": [ {
+      "language": "de",
+      "value": "Anforderung demographischer Informationen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RQP_I04"
+    } ]
+  }, {
+    "code": "I05",
+    "display": "RQC/RCI - Request for patient clinical information",
+    "definition": "RQC/RCI - Request for patient clinical information",
+    "designation": [ {
+      "language": "de",
+      "value": "Anforderung klinischer Informationen"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2016-07-23"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "I06",
+    "display": "RQC/RCL - Request/receipt of clinical data listing",
+    "definition": "RQC/RCL - Request/receipt of clinical data listing",
+    "designation": [ {
+      "language": "de",
+      "value": "Anforderung strukt. klinischer Informationen"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "I07",
+    "display": "PIN/ACK - Unsolicited insurance information",
+    "definition": "PIN/ACK - Unsolicited insurance information",
+    "designation": [ {
+      "language": "de",
+      "value": "unaufgeforderte Übermittlung v. Versicherungsdaten"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RQI_I01"
+    } ]
+  }, {
+    "code": "I08",
+    "display": "RQA/RPA - Request for treatment authorization information",
+    "definition": "RQA/RPA - Request for treatment authorization information",
+    "designation": [ {
+      "language": "de",
+      "value": "Anforderung Kostenübernahmeerklärung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RQA_I08"
+    } ]
+  }, {
+    "code": "I09",
+    "display": "RQA/RPA - Request for modification to an authorization",
+    "definition": "RQA/RPA - Request for modification to an authorization",
+    "designation": [ {
+      "language": "de",
+      "value": "Anforderg bzgl. Änderung Kostenübernahmeerklärung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RQA_I08"
+    } ]
+  }, {
+    "code": "I10",
+    "display": "RQA/RPA - Request for resubmission of an authorization",
+    "definition": "RQA/RPA - Request for resubmission of an authorization",
+    "designation": [ {
+      "language": "de",
+      "value": "erneute Anforderung Kostenübernahmeerklärung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RQA_I08"
+    } ]
+  }, {
+    "code": "I11",
+    "display": "RQA/RPA - Request for cancellation of an authorization",
+    "definition": "RQA/RPA - Request for cancellation of an authorization",
+    "designation": [ {
+      "language": "de",
+      "value": "Anfordrg Stornierg einer Kostenübernahmeerklärung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RQA_I08"
+    } ]
+  }, {
+    "code": "I12",
+    "display": "REF/RRI - Patient referral",
+    "definition": "REF/RRI - Patient referral",
+    "designation": [ {
+      "language": "de",
+      "value": "Überweisung eines Patienten"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "REF_I12"
+    } ]
+  }, {
+    "code": "I13",
+    "display": "REF/RRI - Modify patient referral",
+    "definition": "REF/RRI - Modify patient referral",
+    "designation": [ {
+      "language": "de",
+      "value": "Änderung einer Patientenüberweisung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "REF_I12"
+    } ]
+  }, {
+    "code": "I14",
+    "display": "REF/RRI - Cancel patient referral",
+    "definition": "REF/RRI - Cancel patient referral",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung einer Patientenüberweisung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "REF_I12"
+    } ]
+  }, {
+    "code": "I15",
+    "display": "REF/RRI - Request patient referral status",
+    "definition": "REF/RRI - Request patient referral status",
+    "designation": [ {
+      "language": "de",
+      "value": "Statusabfrage bzgl. Patientenüberweisung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "REF_I12"
+    } ]
+  }, {
+    "code": "I16",
+    "display": "Collaborative Care Referral",
+    "definition": "Collaborative Care Referral",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CCR_I16"
+    } ]
+  }, {
+    "code": "I17",
+    "display": "Modify Collaborative Care Referral",
+    "definition": "Modify Collaborative Care Referral",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2016-07-23"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CCR_I16"
+    } ]
+  }, {
+    "code": "I18",
+    "display": "Cancel Collaborative Care Referral",
+    "definition": "Cancel Collaborative Care Referral",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CCR_I16"
+    } ]
+  }, {
+    "code": "I19",
+    "display": "Collaborative Care Query/Collaborative Care Query Update",
+    "definition": "Collaborative Care Query/Collaborative Care Query Update",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CCQ_I19"
+    } ]
+  }, {
+    "code": "I20",
+    "display": "Asynchronous Collaborative Care Update",
+    "definition": "Asynchronous Collaborative Care Update",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CCU_I20"
+    } ]
+  }, {
+    "code": "I21",
+    "display": "Collaborative Care Message",
+    "definition": "Collaborative Care Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CCM_I21"
+    } ]
+  }, {
+    "code": "I22",
+    "display": "Collaborative Care Fetch / Collaborative Care Information",
+    "definition": "Collaborative Care Fetch / Collaborative Care Information",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "CCF_I22"
+    } ]
+  }, {
+    "code": "J01",
+    "display": "QCN/ACK - Cancel query/acknowledge message",
+    "definition": "QCN/ACK - Cancel query/acknowledge message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QCN_J01"
+    } ]
+  }, {
+    "code": "J02",
+    "display": "QSX/ACK - Cancel subscription/acknowledge message",
+    "definition": "QSX/ACK - Cancel subscription/acknowledge message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QCN_J01"
+    } ]
+  }, {
+    "code": "K11",
+    "display": "RSP - Segment pattern response in response to QBP^Q11",
+    "definition": "RSP - Segment pattern response in response to QBP^Q11",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RSP_K11"
+    } ]
+  }, {
+    "code": "K13",
+    "display": "RTB - Tabular response in response to QBP^Q13",
+    "definition": "RTB - Tabular response in response to QBP^Q13",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RTB_K13"
+    } ]
+  }, {
+    "code": "K15",
+    "display": "RDY - Display response in response to QBP^Q15",
+    "definition": "RDY - Display response in response to QBP^Q15",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RDY_K15"
+    } ]
+  }, {
+    "code": "K21",
+    "display": "RSP - Get person demographics response",
+    "definition": "RSP - Get person demographics response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    } ]
+  }, {
+    "code": "K22",
+    "display": "RSP - Find candidates response",
+    "definition": "RSP - Find candidates response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    } ]
+  }, {
+    "code": "K23",
+    "display": "RSP - Get corresponding identifiers response",
+    "definition": "RSP - Get corresponding identifiers response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    } ]
+  }, {
+    "code": "K24",
+    "display": "RSP - Allocate identifiers response",
+    "definition": "RSP - Allocate identifiers response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    } ]
+  }, {
+    "code": "K25",
+    "display": "RSP - Personnel Information by Segment Response",
+    "definition": "RSP - Personnel Information by Segment Response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RSP_K25"
+    } ]
+  }, {
+    "code": "K31",
+    "display": "RSP -Dispense History Response",
+    "definition": "RSP -Dispense History Response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RSP_K31"
+    } ]
+  }, {
+    "code": "K32",
+    "display": "Find Candidates including Visit Information Response",
+    "definition": "Find Candidates including Visit Information Response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    } ]
+  }, {
+    "code": "K33",
+    "display": "Get Donor Record Candidates Response Message",
+    "definition": "Get Donor Record Candidates Response Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RSP_O33"
+    } ]
+  }, {
+    "code": "K34",
+    "display": "Segment Pattern Response Message",
+    "definition": "Segment Pattern Response Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RSP_O34"
+    } ]
+  }, {
+    "code": "M01",
+    "display": "MFN/MFK - Master file not otherwise specified",
+    "definition": "MFN/MFK - Master file not otherwise specified",
+    "designation": [ {
+      "language": "de",
+      "value": "Stammdatenänderung (veraltet)"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2016-07-23"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    } ]
+  }, {
+    "code": "M02",
+    "display": "MFN/MFK - Master file - staff practitioner",
+    "definition": "MFN/MFK - Master file - staff practitioner",
+    "designation": [ {
+      "language": "de",
+      "value": "Stammdatenänderung - Ärzte"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M02"
+    } ]
+  }, {
+    "code": "M03",
+    "display": "MFN/MFK - Master file - test/observation",
+    "definition": "MFN/MFK - Master file - test/observation",
+    "designation": [ {
+      "language": "de",
+      "value": "Stammdatenänderung - Tests / Untersuchungen"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    } ]
+  }, {
+    "code": "M04",
+    "display": "MFN/MFK - Master files charge description",
+    "definition": "MFN/MFK - Master files charge description",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M04"
+    } ]
+  }, {
+    "code": "M05",
+    "display": "MFN/MFK - Patient location master file",
+    "definition": "MFN/MFK - Patient location master file",
+    "designation": [ {
+      "language": "de",
+      "value": "Stammdatenänderung - Aufenthaltsorte"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M05"
+    } ]
+  }, {
+    "code": "M06",
+    "display": "MFN/MFK - Clinical study with phases and schedules master file",
+    "definition": "MFN/MFK - Clinical study with phases and schedules master file",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M06"
+    } ]
+  }, {
+    "code": "M07",
+    "display": "MFN/MFK - Clinical study without phases but with schedules master file",
+    "definition": "MFN/MFK - Clinical study without phases but with schedules master file",
+    "designation": [ {
+      "language": "de",
+      "value": "Stammdatenänderung - klinische Studien ohne Phasen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M07"
+    } ]
+  }, {
+    "code": "M08",
+    "display": "MFN/MFK - Test/observation (numeric) master file",
+    "definition": "MFN/MFK - Test/observation (numeric) master file",
+    "designation": [ {
+      "language": "de",
+      "value": "Stammdatenänderung - Tests/Untersuchung mit numerischen Ergebnissen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M08"
+    } ]
+  }, {
+    "code": "M09",
+    "display": "MFN/MFK - Test/observation (categorical) master file",
+    "definition": "MFN/MFK - Test/observation (categorical) master file",
+    "designation": [ {
+      "language": "de",
+      "value": "Stammdatenänderung - Tests mit nicht numerischen Ergebnissen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M09"
+    } ]
+  }, {
+    "code": "M10",
+    "display": "MFN/MFK - Test /observation batteries master file",
+    "definition": "MFN/MFK - Test /observation batteries master file",
+    "designation": [ {
+      "language": "de",
+      "value": "Stammdatenänderung - Testprofile"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M10"
+    } ]
+  }, {
+    "code": "M11",
+    "display": "MFN/MFK - Test/calculated observations master file",
+    "definition": "MFN/MFK - Test/calculated observations master file",
+    "designation": [ {
+      "language": "de",
+      "value": "Stammdatenänderung - berechnete Ergebnisse"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M11"
+    } ]
+  }, {
+    "code": "M12",
+    "display": "MFN/MFK - Master file notification message",
+    "definition": "MFN/MFK - Master file notification message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M12"
+    } ]
+  }, {
+    "code": "M13",
+    "display": "MFN/MFK - Master file notification - general",
+    "definition": "MFN/MFK - Master file notification - general",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M13"
+    } ]
+  }, {
+    "code": "M14",
+    "display": "MFN/MFK - Master file notification - site defined",
+    "definition": "MFN/MFK - Master file notification - site defined",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_Znn"
+    } ]
+  }, {
+    "code": "M15",
+    "display": "MFN/MFK - Inventory item master file notification",
+    "definition": "MFN/MFK - Inventory item master file notification",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M15"
+    } ]
+  }, {
+    "code": "M16",
+    "display": "MFN/MFK - Master File Notification Inventory Item Enhanced",
+    "definition": "MFN/MFK - Master File Notification Inventory Item Enhanced",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M16"
+    } ]
+  }, {
+    "code": "M17",
+    "display": "DRG Master File Message",
+    "definition": "DRG Master File Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M17"
+    } ]
+  }, {
+    "code": "M18",
+    "display": "MFN/MFK - Master file notification - Test/Observation (Payer)",
+    "definition": "MFN/MFK - Master file notification - Test/Observation (Payer)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MFN_M18"
+    } ]
+  }, {
+    "code": "N01",
+    "display": "NMQ/NMR - Application management query message",
+    "definition": "NMQ/NMR - Application management query message",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2016-07-23"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    } ]
+  }, {
+    "code": "N02",
+    "display": "NMD/ACK - Application management data message (unsolicited)",
+    "definition": "NMD/ACK - Application management data message (unsolicited)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "NMD_N02"
+    } ]
+  }, {
+    "code": "O01",
+    "display": "ORM - Order message (also RDE, RDS, RGV, RAS)",
+    "definition": "ORM - Order message (also RDE, RDS, RGV, RAS)",
+    "designation": [ {
+      "language": "de",
+      "value": "Auftrag / Verordnung"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    } ]
+  }, {
+    "code": "O02",
+    "display": "ORR - Order response (also RRE, RRD, RRG, RRA)",
+    "definition": "ORR - Order response (also RRE, RRD, RRG, RRA)",
+    "designation": [ {
+      "language": "de",
+      "value": "Auftragsbestätigung"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    } ]
+  }, {
+    "code": "O03",
+    "display": "OMD - Diet order",
+    "definition": "OMD - Diet order",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OMD_O03"
+    } ]
+  }, {
+    "code": "O04",
+    "display": "ORD - Diet order acknowledgment",
+    "definition": "ORD - Diet order acknowledgment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORD_O04"
+    } ]
+  }, {
+    "code": "O05",
+    "display": "OMS - Stock requisition order",
+    "definition": "OMS - Stock requisition order",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OMS_O05"
+    } ]
+  }, {
+    "code": "O06",
+    "display": "ORS - Stock requisition acknowledgment",
+    "definition": "ORS - Stock requisition acknowledgment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORS_O06"
+    } ]
+  }, {
+    "code": "O07",
+    "display": "OMN - Non-stock requisition order",
+    "definition": "OMN - Non-stock requisition order",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OMN_O07"
+    } ]
+  }, {
+    "code": "O08",
+    "display": "ORN - Non-stock requisition acknowledgment",
+    "definition": "ORN - Non-stock requisition acknowledgment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORN_O08"
+    } ]
+  }, {
+    "code": "O09",
+    "display": "OMP - Pharmacy/treatment order",
+    "definition": "OMP - Pharmacy/treatment order",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OMP_O09"
+    } ]
+  }, {
+    "code": "O10",
+    "display": "ORP - Pharmacy/treatment order acknowledgment",
+    "definition": "ORP - Pharmacy/treatment order acknowledgment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORP_O10"
+    } ]
+  }, {
+    "code": "O11",
+    "display": "RDE - Pharmacy/treatment encoded order",
+    "definition": "RDE - Pharmacy/treatment encoded order",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RDE_O11"
+    } ]
+  }, {
+    "code": "O12",
+    "display": "RRE - Pharmacy/treatment encoded order acknowledgment",
+    "definition": "RRE - Pharmacy/treatment encoded order acknowledgment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RRE_O12"
+    } ]
+  }, {
+    "code": "O13",
+    "display": "RDS - Pharmacy/treatment dispense",
+    "definition": "RDS - Pharmacy/treatment dispense",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RDS_O13"
+    } ]
+  }, {
+    "code": "O14",
+    "display": "RRD - Pharmacy/treatment dispense acknowledgment",
+    "definition": "RRD - Pharmacy/treatment dispense acknowledgment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RRD_O14"
+    } ]
+  }, {
+    "code": "O15",
+    "display": "RGV - Pharmacy/treatment give",
+    "definition": "RGV - Pharmacy/treatment give",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RGV_O15"
+    } ]
+  }, {
+    "code": "O16",
+    "display": "RRG - Pharmacy/treatment give acknowledgment",
+    "definition": "RRG - Pharmacy/treatment give acknowledgment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RRG_O16"
+    } ]
+  }, {
+    "code": "O17",
+    "display": "RAS - Pharmacy/treatment administration",
+    "definition": "RAS - Pharmacy/treatment administration",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RAS_O17"
+    } ]
+  }, {
+    "code": "O18",
+    "display": "RRA - Pharmacy/treatment administration acknowledgment",
+    "definition": "RRA - Pharmacy/treatment administration acknowledgment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RRA_O18"
+    } ]
+  }, {
+    "code": "O19",
+    "display": "OMG - General clinical order",
+    "definition": "OMG - General clinical order",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OMG_O19"
+    } ]
+  }, {
+    "code": "O20",
+    "display": "ORG/ORL - General clinical order response",
+    "definition": "ORG/ORL - General clinical order response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORG_O20"
+    } ]
+  }, {
+    "code": "O21",
+    "display": "OML - Laboratory order",
+    "definition": "OML - Laboratory order",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OML_O21"
+    } ]
+  }, {
+    "code": "O22",
+    "display": "ORL - General laboratory order response message to any OML",
+    "definition": "ORL - General laboratory order response message to any OML",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORL_O22"
+    } ]
+  }, {
+    "code": "O23",
+    "display": "OMI - Imaging order",
+    "definition": "OMI - Imaging order",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OMI_O23"
+    } ]
+  }, {
+    "code": "O24",
+    "display": "ORI - Imaging order response message to any OMI",
+    "definition": "ORI - Imaging order response message to any OMI",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORI_O24"
+    } ]
+  }, {
+    "code": "O25",
+    "display": "RDE - Pharmacy/treatment refill authorization request",
+    "definition": "RDE - Pharmacy/treatment refill authorization request",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RDE_O11"
+    } ]
+  }, {
+    "code": "O26",
+    "display": "RRE - Pharmacy/Treatment Refill Authorization Acknowledgement",
+    "definition": "RRE - Pharmacy/Treatment Refill Authorization Acknowledgement",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RRE_O12"
+    } ]
+  }, {
+    "code": "O27",
+    "display": "OMB - Blood product order",
+    "definition": "OMB - Blood product order",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OMB_O27"
+    } ]
+  }, {
+    "code": "O28",
+    "display": "ORB - Blood product order acknowledgment",
+    "definition": "ORB - Blood product order acknowledgment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORB_O28"
+    } ]
+  }, {
+    "code": "O29",
+    "display": "BPS - Blood product dispense status",
+    "definition": "BPS - Blood product dispense status",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "BPS_O29"
+    } ]
+  }, {
+    "code": "O30",
+    "display": "BRP - Blood product dispense status acknowledgment",
+    "definition": "BRP - Blood product dispense status acknowledgment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "BRP_O30"
+    } ]
+  }, {
+    "code": "O31",
+    "display": "BTS - Blood product transfusion/disposition",
+    "definition": "BTS - Blood product transfusion/disposition",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "BTS_O31"
+    } ]
+  }, {
+    "code": "O32",
+    "display": "BRT - Blood product transfusion/disposition acknowledgment",
+    "definition": "BRT - Blood product transfusion/disposition acknowledgment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "BRT_O32"
+    } ]
+  }, {
+    "code": "O33",
+    "display": "OML - Laboratory order for multiple orders related to a single specimen",
+    "definition": "OML - Laboratory order for multiple orders related to a single specimen",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OML_O33"
+    } ]
+  }, {
+    "code": "O34",
+    "display": "ORL - Laboratory order response message to a multiple order related to single specimen OML",
+    "definition": "ORL - Laboratory order response message to a multiple order related to single specimen OML",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORL_O34"
+    } ]
+  }, {
+    "code": "O35",
+    "display": "OML - Laboratory order for multiple orders related to a single container of a specimen",
+    "definition": "OML - Laboratory order for multiple orders related to a single container of a specimen",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OML_O35"
+    } ]
+  }, {
+    "code": "O36",
+    "display": "ORL - Laboratory order response message to a single container of a specimen OML",
+    "definition": "ORL - Laboratory order response message to a single container of a specimen OML",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORL_O36"
+    } ]
+  }, {
+    "code": "O37",
+    "display": "OPL - Population/Location-Based Laboratory Order Message",
+    "definition": "OPL - Population/Location-Based Laboratory Order Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OPL_O37"
+    } ]
+  }, {
+    "code": "O38",
+    "display": "OPR - Population/Location-Based Laboratory Order Acknowledgment Message",
+    "definition": "OPR - Population/Location-Based Laboratory Order Acknowledgment Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OPR_O38"
+    } ]
+  }, {
+    "code": "O39",
+    "display": "Specimen shipment centric laboratory order",
+    "definition": "Specimen shipment centric laboratory order",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OML_O39"
+    } ]
+  }, {
+    "code": "O40",
+    "display": "Specimen Shipment Centric Laboratory Order Acknowledgment Message",
+    "definition": "Specimen Shipment Centric Laboratory Order Acknowledgment Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORL_O40"
+    } ]
+  }, {
+    "code": "O41",
+    "display": "DBC - Create Donor Record Message",
+    "definition": "DBC - Create Donor Record Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "DBC_O41"
+    } ]
+  }, {
+    "code": "O42",
+    "display": "DBU - Update Donor Record Message",
+    "definition": "DBU - Update Donor Record Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "DBC_O42"
+    } ]
+  }, {
+    "code": "O43",
+    "display": "General Order Message with Document Payload Acknowledgement Message",
+    "definition": "General Order Message with Document Payload Acknowledgement Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "DRG_O43"
+    } ]
+  }, {
+    "code": "O44",
+    "display": "Donor Registration - Minimal Message",
+    "definition": "Donor Registration - Minimal Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "DER_O44"
+    } ]
+  }, {
+    "code": "O45",
+    "display": "Donor Eligibility Observations Message",
+    "definition": "Donor Eligibility Observations Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "DEO_O45"
+    } ]
+  }, {
+    "code": "O46",
+    "display": "Donor Eligiblity Message",
+    "definition": "Donor Eligiblity Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "DEL_O46"
+    } ]
+  }, {
+    "code": "O47",
+    "display": "Donor Request to Collect Message",
+    "definition": "Donor Request to Collect Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "DRC_O47"
+    } ]
+  }, {
+    "code": "O48",
+    "display": "Donation Procedure Message",
+    "definition": "Donation Procedure Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "DPR_O48"
+    } ]
+  }, {
+    "code": "O49",
+    "display": "Pharmacy/Treatment Dispense Request Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2016-03-16"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RDE_O49"
+    } ]
+  }, {
+    "code": "O50",
+    "display": "Pharmacy/Treatment Encoded Order Acknowledgment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2016-03-16"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RRE_O50"
+    } ]
+  }, {
+    "code": "O51",
+    "display": "OSU – Order Status Update",
+    "definition": "OSU – Order Status Update",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OSU_O51"
+    } ]
+  }, {
+    "code": "O52",
+    "display": "OSU – Order Status Update Acknowledgement",
+    "definition": "OSU – Order Status Update Acknowledgement",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OSU_O52"
+    } ]
+  }, {
+    "code": "O53",
+    "display": "ORL - General Laboratory Order Acknowledgment Message (Patient Optional)",
+    "definition": "ORL - General Laboratory Order Acknowledgment Message (Patient Optional)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORL_O53"
+    } ]
+  }, {
+    "code": "O54",
+    "display": "ORL - Laboratory Order Acknowledgment Message  – Multiple Order Per Specimen (Patient Optional)",
+    "definition": "ORL - Laboratory Order Acknowledgment Message  – Multiple Order Per Specimen (Patient Optional)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORL_O54"
+    } ]
+  }, {
+    "code": "O55",
+    "display": "ORL - Laboratory Order Acknowledgment Message  – Multiple Order Per Container of Specimen (Patient Optional)",
+    "definition": "ORL - Laboratory Order Acknowledgment Message  – Multiple Order Per Container of Specimen (Patient Optional)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORL_O55"
+    } ]
+  }, {
+    "code": "O56",
+    "display": "ORL - Specimen Shipment Centric Laboratory Order Acknowledgment Message (Patient Optional)",
+    "definition": "ORL - Specimen Shipment Centric Laboratory Order Acknowledgment Message (Patient Optional)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORL_O56"
+    } ]
+  }, {
+    "code": "O57",
+    "display": "OMQ- General Order Message with Document Payload",
+    "definition": "OMQ- General Order Message with Document Payload",
+    "property": [ {
+      "code": "status",
+      "valueCode": "backward"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2016-07-16"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OMQ_O57"
+    } ]
+  }, {
+    "code": "O58",
+    "display": "ORX - General Order Message with Document Payload Acknowledgement Message",
+    "definition": "ORX - General Order Message with Document Payload Acknowledgement Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORX_O58"
+    } ]
+  }, {
+    "code": "O59",
+    "display": "OML - Laboratory order for additional work up",
+    "definition": "Fulfillment order for work up on a previously communicated result or submitted specimen",
+    "property": [ {
+      "code": "comment",
+      "valueString": "An example is the IHE LCC profile which describes this message in the LAB-7 transaction"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2025-07-31"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OML_O59"
+    } ]
+  }, {
+    "code": "P01",
+    "display": "BAR/ACK - Add patient accounts",
+    "definition": "BAR/ACK - Add patient accounts",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "BAR_P01"
+    } ]
+  }, {
+    "code": "P02",
+    "display": "BAR/ACK - Purge patient accounts",
+    "definition": "BAR/ACK - Purge patient accounts",
+    "designation": [ {
+      "language": "de",
+      "value": "Löschen der Abrechnungsdaten eines Patientenkontos"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "BAR_P02"
+    } ]
+  }, {
+    "code": "P03",
+    "display": "DFT/ACK - Post detail financial transaction",
+    "definition": "DFT/ACK - Post detail financial transaction",
+    "designation": [ {
+      "language": "de",
+      "value": "Leistungs- und Abrechnungsinformationen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "DFT_P03"
+    } ]
+  }, {
+    "code": "P04",
+    "display": "QRY/DSP - Generate bill and A/R statements",
+    "definition": "QRY/DSP - Generate bill and A/R statements",
+    "designation": [ {
+      "language": "de",
+      "value": "Druck und Anzeige von Rechnungen"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    } ]
+  }, {
+    "code": "P05",
+    "display": "BAR/ACK - Update account",
+    "definition": "BAR/ACK - Update account",
+    "designation": [ {
+      "language": "de",
+      "value": "Änderung eines Patientenkontos"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "BAR_P05"
+    } ]
+  }, {
+    "code": "P06",
+    "display": "BAR/ACK - End account",
+    "definition": "BAR/ACK - End account",
+    "designation": [ {
+      "language": "de",
+      "value": "Abschluß eines Patientenkontos"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "BAR_P06"
+    } ]
+  }, {
+    "code": "P07",
+    "display": "PEX - Unsolicited initial individual product experience report",
+    "definition": "PEX - Unsolicited initial individual product experience report",
+    "designation": [ {
+      "language": "de",
+      "value": "unaufgeforderte individueller Produktersterfahrungsbericht"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PEX_P07"
+    } ]
+  }, {
+    "code": "P08",
+    "display": "PEX - Unsolicited update individual product experience report",
+    "definition": "PEX - Unsolicited update individual product experience report",
+    "designation": [ {
+      "language": "de",
+      "value": "Änderung individueller Produktersterfahrungsbericht"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PEX_P07"
+    } ]
+  }, {
+    "code": "P09",
+    "display": "SUR - Summary product experience report",
+    "definition": "SUR - Summary product experience report",
+    "designation": [ {
+      "language": "de",
+      "value": "zusammenfassender Produkterfahrungsbericht"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "P10",
+    "display": "BAR/ACK -Transmit Ambulatory Payment  Classification(APC)",
+    "definition": "BAR/ACK -Transmit Ambulatory Payment  Classification(APC)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "BAR_P10"
+    } ]
+  }, {
+    "code": "P11",
+    "display": "DFT/ACK - Post Detail Financial Transactions - New",
+    "definition": "DFT/ACK - Post Detail Financial Transactions - New",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "DFT_P11"
+    } ]
+  }, {
+    "code": "P12",
+    "display": "BAR/ACK - Update Diagnosis/Procedure",
+    "definition": "BAR/ACK - Update Diagnosis/Procedure",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "BAR_P12"
+    } ]
+  }, {
+    "code": "PC1",
+    "display": "PPR - PC/ problem add",
+    "definition": "PPR - PC/ problem add",
+    "designation": [ {
+      "language": "de",
+      "value": "Problem hinzufügen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PPR_PC1"
+    } ]
+  }, {
+    "code": "PC2",
+    "display": "PPR - PC/ problem update",
+    "definition": "PPR - PC/ problem update",
+    "designation": [ {
+      "language": "de",
+      "value": "Problem ändern"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PPR_PC1"
+    } ]
+  }, {
+    "code": "PC3",
+    "display": "PPR - PC/ problem delete",
+    "definition": "PPR - PC/ problem delete",
+    "designation": [ {
+      "language": "de",
+      "value": "Problem löschen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PPR_PC1"
+    } ]
+  }, {
+    "code": "PC4",
+    "display": "QRY - PC/ problem query",
+    "definition": "QRY - PC/ problem query",
+    "designation": [ {
+      "language": "de",
+      "value": "Problem abfragen"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "PC5",
+    "display": "PRR - PC/ problem response",
+    "definition": "PRR - PC/ problem response",
+    "designation": [ {
+      "language": "de",
+      "value": "Problem Anfrage beantworten"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "PC6",
+    "display": "PGL - PC/ goal add",
+    "definition": "PGL - PC/ goal add",
+    "designation": [ {
+      "language": "de",
+      "value": "Ziel hinzufügen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PGL_PC6"
+    } ]
+  }, {
+    "code": "PC7",
+    "display": "PGL - PC/ goal update",
+    "definition": "PGL - PC/ goal update",
+    "designation": [ {
+      "language": "de",
+      "value": "Ziel ändern"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PGL_PC6"
+    } ]
+  }, {
+    "code": "PC8",
+    "display": "PGL - PC/ goal delete",
+    "definition": "PGL - PC/ goal delete",
+    "designation": [ {
+      "language": "de",
+      "value": "Ziel löschen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PGL_PC6"
+    } ]
+  }, {
+    "code": "PC9",
+    "display": "QRY - PC/ goal query",
+    "definition": "QRY - PC/ goal query",
+    "designation": [ {
+      "language": "de",
+      "value": "Ziel abfragen"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "PCA",
+    "display": "PPV - PC/ goal response",
+    "definition": "PPV - PC/ goal response",
+    "designation": [ {
+      "language": "de",
+      "value": "Ziel Anfrage beantworten"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "PCB",
+    "display": "PPP - PC/ pathway (problem-oriented) add",
+    "definition": "PPP - PC/ pathway (problem-oriented) add",
+    "designation": [ {
+      "language": "de",
+      "value": "(problemorientierte) Leitlinie hinzufügen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PPP_PCB"
+    } ]
+  }, {
+    "code": "PCC",
+    "display": "PPP - PC/ pathway (problem-oriented) update",
+    "definition": "PPP - PC/ pathway (problem-oriented) update",
+    "designation": [ {
+      "language": "de",
+      "value": "(problemorientierte) Leitlinie ändern"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PPP_PCB"
+    } ]
+  }, {
+    "code": "PCD",
+    "display": "PPP - PC/ pathway (problem-oriented) delete",
+    "definition": "PPP - PC/ pathway (problem-oriented) delete",
+    "designation": [ {
+      "language": "de",
+      "value": "(problemorientierte) Leitlinie löschen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PPP_PCB"
+    } ]
+  }, {
+    "code": "PCE",
+    "display": "QRY - PC/ pathway (problem-oriented) query",
+    "definition": "QRY - PC/ pathway (problem-oriented) query",
+    "designation": [ {
+      "language": "de",
+      "value": "(problemorientierte) Leitlinie abfragen"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "PCF",
+    "display": "PTR - PC/ pathway (problem-oriented) query response",
+    "definition": "PTR - PC/ pathway (problem-oriented) query response",
+    "designation": [ {
+      "language": "de",
+      "value": "(problemorientierte) Leitlinie Anfrage beantworten"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "PCG",
+    "display": "PPG - PC/ pathway (goal-oriented) add",
+    "definition": "PPG - PC/ pathway (goal-oriented) add",
+    "designation": [ {
+      "language": "de",
+      "value": "(zielorientierte) Leitlinie hinzufügen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PPG_PCG"
+    } ]
+  }, {
+    "code": "PCH",
+    "display": "PPG - PC/ pathway (goal-oriented) update",
+    "definition": "PPG - PC/ pathway (goal-oriented) update",
+    "designation": [ {
+      "language": "de",
+      "value": "(zielorientierte) Leitlinie ändern"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PPG_PCG"
+    } ]
+  }, {
+    "code": "PCJ",
+    "display": "PPG - PC/ pathway (goal-oriented) delete",
+    "definition": "PPG - PC/ pathway (goal-oriented) delete",
+    "designation": [ {
+      "language": "de",
+      "value": "(zielorientierte) Leitlinie löschen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "PPG_PCG"
+    } ]
+  }, {
+    "code": "PCK",
+    "display": "QRY - PC/ pathway (goal-oriented) query",
+    "definition": "QRY - PC/ pathway (goal-oriented) query",
+    "designation": [ {
+      "language": "de",
+      "value": "(zielorientierte) Leitlinie abfragen"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "PCL",
+    "display": "PPT - PC/ pathway (goal-oriented) query response",
+    "definition": "PPT - PC/ pathway (goal-oriented) query response",
+    "designation": [ {
+      "language": "de",
+      "value": "(zielorientierte) Leitlinie Anfrage beantworten"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "Q01",
+    "display": "QRY/DSR - Query sent for immediate response",
+    "definition": "QRY/DSR - Query sent for immediate response",
+    "designation": [ {
+      "language": "de",
+      "value": "Anfrage mit sofortiger Antwort"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    } ]
+  }, {
+    "code": "Q02",
+    "display": "QRY/QCK - Query sent for deferred response",
+    "definition": "QRY/QCK - Query sent for deferred response",
+    "designation": [ {
+      "language": "de",
+      "value": "Anfrage mit verzögerter Antwort"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    } ]
+  }, {
+    "code": "Q03",
+    "display": "DSR/ACK - Deferred response to a query",
+    "definition": "DSR/ACK - Deferred response to a query",
+    "designation": [ {
+      "language": "de",
+      "value": "Verzögerte Antwort auf Anfrage"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    } ]
+  }, {
+    "code": "Q04",
+    "display": "EQQ - Embedded query language query",
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "Q05",
+    "display": "UDM/ACK - Unsolicited display update message",
+    "definition": "UDM/ACK - Unsolicited display update message",
+    "designation": [ {
+      "language": "de",
+      "value": "Sofortige Bildschirmanzeige (Eilmeldung)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "UDM_Q05"
+    } ]
+  }, {
+    "code": "Q06",
+    "display": "OSQ/OSR - Query for order status",
+    "definition": "OSQ/OSR - Query for order status",
+    "designation": [ {
+      "language": "de",
+      "value": "Abfrage des Auftragsstatus"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "Q07",
+    "display": "VQQ - Virtual table query",
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "Q08",
+    "display": "SPQ - Stored procedure request",
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "Q09",
+    "display": "RQQ - event replay query",
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "Q11",
+    "display": "QBP - Query by parameter requesting an RSP segment pattern response",
+    "definition": "QBP - Query by parameter requesting an RSP segment pattern response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QBP_Q11"
+    } ]
+  }, {
+    "code": "Q13",
+    "display": "QBP - Query by parameter requesting an  RTB - tabular response",
+    "definition": "QBP - Query by parameter requesting an  RTB - tabular response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "Q15",
+    "display": "QBP - Query by parameter requesting an RDY display response",
+    "definition": "QBP - Query by parameter requesting an RDY display response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QBP_Q15"
+    } ]
+  }, {
+    "code": "Q16",
+    "display": "QSB - Create subscription",
+    "definition": "QSB - Create subscription",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QSB_Q16"
+    } ]
+  }, {
+    "code": "Q17",
+    "display": "QVR - Query for previous events",
+    "definition": "QVR - Query for previous events",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QVR_Q17"
+    } ]
+  }, {
+    "code": "Q21",
+    "display": "QBP - Get person demographics",
+    "definition": "QBP - Get person demographics",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QBP_Q21"
+    } ]
+  }, {
+    "code": "Q22",
+    "display": "QBP - Find candidates",
+    "definition": "QBP - Find candidates",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QBP_Q21"
+    } ]
+  }, {
+    "code": "Q23",
+    "display": "QBP - Get corresponding identifiers",
+    "definition": "QBP - Get corresponding identifiers",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QBP_Q21"
+    } ]
+  }, {
+    "code": "Q24",
+    "display": "QBP - Allocate identifiers",
+    "definition": "QBP - Allocate identifiers",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QBP_Q21"
+    } ]
+  }, {
+    "code": "Q25",
+    "display": "QBP - Personnel Information by Segment Query",
+    "definition": "QBP - Personnel Information by Segment Query",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QBP_Q21"
+    } ]
+  }, {
+    "code": "Q26",
+    "display": "ROR - Pharmacy/treatment order response",
+    "definition": "ROR - Pharmacy/treatment order response",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "Q27",
+    "display": "RAR - Pharmacy/treatment administration information",
+    "definition": "RAR - Pharmacy/treatment administration information",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "Q28",
+    "display": "RDR - Pharmacy/treatment dispense information",
+    "definition": "RDR - Pharmacy/treatment dispense information",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "Q29",
+    "display": "RER - Pharmacy/treatment encoded order information",
+    "definition": "RER - Pharmacy/treatment encoded order information",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "Q30",
+    "display": "RGR - Pharmacy/treatment dose information",
+    "definition": "RGR - Pharmacy/treatment dose information",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "Q31",
+    "display": "QBP Query Dispense history",
+    "definition": "QBP Query Dispense history",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QBP_Q11"
+    } ]
+  }, {
+    "code": "Q32",
+    "display": "Find Candidates including Visit Information",
+    "definition": "Find Candidates including Visit Information",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QBP_Q21"
+    } ]
+  }, {
+    "code": "Q33",
+    "display": "QBP - Get Donor Record Candidates",
+    "definition": "QBP - Get Donor Record Candidates",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QBP_O33"
+    } ]
+  }, {
+    "code": "Q34",
+    "display": "QBP - Get Donor Record",
+    "definition": "QBP - Get Donor Record",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "QBP_O34"
+    } ]
+  }, {
+    "code": "R01",
+    "display": "ORU/ACK - Unsolicited transmission of an observation message",
+    "definition": "ORU/ACK - Unsolicited transmission of an observation message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORU_R01"
+    } ]
+  }, {
+    "code": "R02",
+    "display": "QRY - Query for results of observation",
+    "definition": "QRY - Query for results of observation",
+    "designation": [ {
+      "language": "de",
+      "value": "Anfrage nach Untersuchungsergebnis"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    } ]
+  }, {
+    "code": "R03",
+    "display": "QRY/DSR Display-oriented results, query/unsol. update (for backward compatibility only) (Replaced by Q05)",
+    "designation": [ {
+      "language": "de",
+      "value": "Anzeigeorientiertes Ergebnis"
+    } ],
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.1"
+    } ]
+  }, {
+    "code": "R04",
+    "display": "ORF - Response to query; transmission of requested observation",
+    "definition": "ORF - Response to query; transmission of requested observation",
+    "designation": [ {
+      "language": "de",
+      "value": "Antwort auf Anfrage / Übermittlung eines angeforderten Ergebnisses"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.2"
+    } ]
+  }, {
+    "code": "R05",
+    "display": "QRY/DSR - query for display results (See Q01)",
+    "designation": [ {
+      "language": "de",
+      "value": "Anfrage nach anzeigeorientierten Ergebnissen"
+    } ],
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "R06",
+    "display": "UDM - unsolicited update/display results (See Q05)",
+    "designation": [ {
+      "language": "de",
+      "value": "unaufgeforderte Änderung anzeigeorientierter Ergebnisse"
+    } ],
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "R07",
+    "display": "EDR - Enhanced Display Response",
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "R08",
+    "display": "TBR - Tabular Data Response",
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "R09",
+    "display": "ERP - Event Replay Response",
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "R0R",
+    "display": "R0R - Pharmacy prescription order query response",
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    } ]
+  }, {
+    "code": "R21",
+    "display": "OUL - Unsolicited laboratory observation",
+    "definition": "OUL - Unsolicited laboratory observation",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    } ]
+  }, {
+    "code": "R22",
+    "display": "OUL - Unsolicited Specimen Oriented Observation Message",
+    "definition": "OUL - Unsolicited Specimen Oriented Observation Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OUL_R22"
+    } ]
+  }, {
+    "code": "R23",
+    "display": "OUL - Unsolicited Specimen Container Oriented Observation Message",
+    "definition": "OUL - Unsolicited Specimen Container Oriented Observation Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OUL_R23"
+    } ]
+  }, {
+    "code": "R24",
+    "display": "OUL - Unsolicited Order Oriented Observation Message",
+    "definition": "OUL - Unsolicited Order Oriented Observation Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OUL_R24"
+    } ]
+  }, {
+    "code": "R25",
+    "display": "OPU - Unsolicited Population/Location-Based Laboratory Observation Message",
+    "definition": "OPU - Unsolicited Population/Location-Based Laboratory Observation Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OPU_R25"
+    } ]
+  }, {
+    "code": "R26",
+    "display": "OSM - Unsolicited Specimen Shipment Manifest Message",
+    "definition": "OSM - Unsolicited Specimen Shipment Manifest Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "OSM_R26"
+    } ]
+  }, {
+    "code": "R30",
+    "display": "ORU - Unsolicited Point-Of-Care Observation Message Without Existing Order - Place An Order",
+    "definition": "ORU - Unsolicited Point-Of-Care Observation Message Without Existing Order - Place An Order",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORU_R30"
+    } ]
+  }, {
+    "code": "R31",
+    "display": "ORU - Unsolicited New Point-Of-Care Observation Message - Search For An Order",
+    "definition": "ORU - Unsolicited New Point-Of-Care Observation Message - Search For An Order",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORU_R30"
+    } ]
+  }, {
+    "code": "R32",
+    "display": "ORU - Unsolicited Pre-Ordered Point-Of-Care Observation",
+    "definition": "ORU - Unsolicited Pre-Ordered Point-Of-Care Observation",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORU_R30"
+    } ]
+  }, {
+    "code": "R33",
+    "display": "ORA - Observation Report Acknowledgement",
+    "definition": "ORA - Observation Report Acknowledgement",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORA_R33"
+    } ]
+  }, {
+    "code": "R40",
+    "display": "ORU - Unsolicited Report Alarm",
+    "definition": "ORU - Unsolicited Report Alarm",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORU_R01"
+    } ]
+  }, {
+    "code": "R41",
+    "display": "Observation Report Alert Acknowledgement",
+    "definition": "Observation Report Alert Acknowledgement",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORA_R41"
+    } ]
+  }, {
+    "code": "R42",
+    "display": "ORU – Unsolicited Device Event Observation Message",
+    "definition": "ORU – Unsolicited Device Event Observation Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORU_R01"
+    } ]
+  }, {
+    "code": "R43",
+    "display": "ORU – Unsolicited Patient-Device Association Observation Message",
+    "definition": "ORU – Unsolicited Patient-Device Association Observation Message",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ORU_R01"
+    } ]
+  }, {
+    "code": "RAR",
+    "display": "RAR - Pharmacy administration information query response",
+    "designation": [ {
+      "language": "de",
+      "value": "Antwort bzgl. der Behandlungs-/Darreichungsform"
+    } ],
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "RDR",
+    "display": "RDR - Pharmacy dispense information query response",
+    "designation": [ {
+      "language": "de",
+      "value": "Antwort bzgl. des zu verabreichenden Medikamentes bzw. der Behandlung"
+    } ],
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "RDR_RDR"
+    } ]
+  }, {
+    "code": "RER",
+    "display": "RER - Pharmacy encoded order information query response",
+    "designation": [ {
+      "language": "de",
+      "value": "Antwort bzgl. des zu verabreichenden Medikamentes bzw. der Behandlung"
+    } ],
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "RGR",
+    "display": "RGR - Pharmacy dose information query response",
+    "designation": [ {
+      "language": "de",
+      "value": "Antwort bzgl. der Dosis bzw. der Frequenz der Behandlung"
+    } ],
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "ROR",
+    "display": "ROR - Pharmacy prescription order query response",
+    "definition": "ROR - Pharmacy prescription order query response",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "S01",
+    "display": "SRM/SRR - Request new appointment booking",
+    "definition": "SRM/SRR - Request new appointment booking",
+    "designation": [ {
+      "language": "de",
+      "value": "Terminanforderung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SRM_S01"
+    } ]
+  }, {
+    "code": "S02",
+    "display": "SRM/SRR - Request appointment rescheduling",
+    "definition": "SRM/SRR - Request appointment rescheduling",
+    "designation": [ {
+      "language": "de",
+      "value": "Anforderung für Terminverschiebung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SRM_S01"
+    } ]
+  }, {
+    "code": "S03",
+    "display": "SRM/SRR - Request appointment modification",
+    "definition": "SRM/SRR - Request appointment modification",
+    "designation": [ {
+      "language": "de",
+      "value": "Anforderung für inhaltliche Terminänderung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SRM_S01"
+    } ]
+  }, {
+    "code": "S04",
+    "display": "SRM/SRR - Request appointment cancellation",
+    "definition": "SRM/SRR - Request appointment cancellation",
+    "designation": [ {
+      "language": "de",
+      "value": "Absage eines Termins"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SRM_S01"
+    } ]
+  }, {
+    "code": "S05",
+    "display": "SRM/SRR - Request appointment discontinuation",
+    "definition": "SRM/SRR - Request appointment discontinuation",
+    "designation": [ {
+      "language": "de",
+      "value": "Aussetzung des aktuellen oder weiterer Termine"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SRM_S01"
+    } ]
+  }, {
+    "code": "S06",
+    "display": "SRM/SRR - Request appointment deletion",
+    "definition": "SRM/SRR - Request appointment deletion",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung eines Termins"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SRM_S01"
+    } ]
+  }, {
+    "code": "S07",
+    "display": "SRM/SRR - Request addition of service/resource on appointment",
+    "definition": "SRM/SRR - Request addition of service/resource on appointment",
+    "designation": [ {
+      "language": "de",
+      "value": "Anforderung zusätzlicher Leistungen/Voraussetzungen zu einem Termin"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SRM_S01"
+    } ]
+  }, {
+    "code": "S08",
+    "display": "SRM/SRR - Request modification of service/resource on appointment",
+    "definition": "SRM/SRR - Request modification of service/resource on appointment",
+    "designation": [ {
+      "language": "de",
+      "value": "Änderungsanforderung für zusätzliche Leistungen/Voraussetzungen zu einem Termin"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SRM_S01"
+    } ]
+  }, {
+    "code": "S09",
+    "display": "SRM/SRR - Request cancellation of service/resource on appointment",
+    "definition": "SRM/SRR - Request cancellation of service/resource on appointment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SRM_S01"
+    } ]
+  }, {
+    "code": "S10",
+    "display": "SRM/SRR - Request discontinuation of service/resource on appointment",
+    "definition": "SRM/SRR - Request discontinuation of service/resource on appointment",
+    "designation": [ {
+      "language": "de",
+      "value": "Aussetzung für zusätzliche Leistungen/Voraussetzungen zu einem Termin"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SRM_S01"
+    } ]
+  }, {
+    "code": "S11",
+    "display": "SRM/SRR - Request deletion of service/resource on appointment",
+    "definition": "SRM/SRR - Request deletion of service/resource on appointment",
+    "designation": [ {
+      "language": "de",
+      "value": "Stornierung für zusätzliche Leistungen/Voraussetzungen zu einem Termin"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SRM_S01"
+    } ]
+  }, {
+    "code": "S12",
+    "display": "SIU/ACK - Notification of new appointment booking",
+    "definition": "SIU/ACK - Notification of new appointment booking",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über Terminvergabe"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S13",
+    "display": "SIU/ACK - Notification of appointment rescheduling",
+    "definition": "SIU/ACK - Notification of appointment rescheduling",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung für Terminverschiebung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S14",
+    "display": "SIU/ACK - Notification of appointment modification",
+    "definition": "SIU/ACK - Notification of appointment modification",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung für inhaltliche Terminänderung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S15",
+    "display": "SIU/ACK - Notification of appointment cancellation",
+    "definition": "SIU/ACK - Notification of appointment cancellation",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über Terminabsage"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S16",
+    "display": "SIU/ACK - Notification of appointment discontinuation",
+    "definition": "SIU/ACK - Notification of appointment discontinuation",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über Aussetzung des aktuellen oder weiterer Termine"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S17",
+    "display": "SIU/ACK - Notification of appointment deletion",
+    "definition": "SIU/ACK - Notification of appointment deletion",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über Stornierung eines Termins"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S18",
+    "display": "SIU/ACK - Notification of addition of service/resource on appointment",
+    "definition": "SIU/ACK - Notification of addition of service/resource on appointment",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über  zusätzlicher Leistungen/Voraussetzungen zu einem Termin"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S19",
+    "display": "SIU/ACK - Notification of modification of service/resource on appointment",
+    "definition": "SIU/ACK - Notification of modification of service/resource on appointment",
+    "designation": [ {
+      "language": "de",
+      "value": "Änderungsbenachrichtigung f.zusätzl. Leistungen/Voraussetzungen zu einem Termin"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S20",
+    "display": "SIU/ACK - Notification of cancellation of service/resource on appointment",
+    "definition": "SIU/ACK - Notification of cancellation of service/resource on appointment",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung f. zusätzliche Leistungen/Voraussetzungen zu einem Terminabsage"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S21",
+    "display": "SIU/ACK - Notification of discontinuation of service/resource on appointment",
+    "definition": "SIU/ACK - Notification of discontinuation of service/resource on appointment",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über Aussetzung für zusätzliche Leistungen/Voraussetzungen"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S22",
+    "display": "SIU/ACK - Notification of deletion of service/resource on appointment",
+    "definition": "SIU/ACK - Notification of deletion of service/resource on appointment",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung Stornierg.f.zusätzl.Leistungen/Voraussetzungen zu einem Termin"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S23",
+    "display": "SIU/ACK - Notification of blocked schedule time slot(s)",
+    "definition": "SIU/ACK - Notification of blocked schedule time slot(s)",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über nicht verfügbare Zeitbereiche"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S24",
+    "display": "SIU/ACK - Notification of opened (\"unblocked\") schedule time slot(s)",
+    "definition": "SIU/ACK - Notification of opened (\"unblocked\") schedule time slot(s)",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über (wieder) verfügbare Zeitbereiche"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S25",
+    "display": "SQM/SQR - Schedule query message and response",
+    "definition": "SQM/SQR - Schedule query message and response",
+    "designation": [ {
+      "language": "de",
+      "value": "Anfrage nach Zeitplaninformation"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "S26",
+    "display": "SIU/ACK Notification that patient did not show up for schedule appointment",
+    "definition": "SIU/ACK Notification that patient did not show up for schedule appointment",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über Nichterscheinen eines Patienten"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S27",
+    "display": "SIU/ACK - Broadcast Notification of Scheduled Appointments",
+    "definition": "SIU/ACK - Broadcast Notification of Scheduled Appointments",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SIU_S12"
+    } ]
+  }, {
+    "code": "S28",
+    "display": "SLR/SLS - Request new sterilization lot",
+    "definition": "SLR/SLS - Request new sterilization lot",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SLR_S28"
+    } ]
+  }, {
+    "code": "S29",
+    "display": "SLR/SLS - Request Sterilization lot deletion",
+    "definition": "SLR/SLS - Request Sterilization lot deletion",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SLR_S28"
+    } ]
+  }, {
+    "code": "S30",
+    "display": "STI/STS - Request item",
+    "definition": "STI/STS - Request item",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SLR_S28"
+    } ]
+  }, {
+    "code": "S31",
+    "display": "SDR/SDS - Request anti-microbial device data",
+    "definition": "SDR/SDS - Request anti-microbial device data",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SDR_S31"
+    } ]
+  }, {
+    "code": "S32",
+    "display": "SMD/SMS - Request anti-microbial device cycle data",
+    "definition": "SMD/SMS - Request anti-microbial device cycle data",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SDR_S32"
+    } ]
+  }, {
+    "code": "S33",
+    "display": "STC/ACK - Notification of sterilization configuration",
+    "definition": "STC/ACK - Notification of sterilization configuration",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "STC_S33"
+    } ]
+  }, {
+    "code": "S34",
+    "display": "SLN/ACK - Notification of sterilization lot",
+    "definition": "SLN/ACK - Notification of sterilization lot",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SLR_S28"
+    } ]
+  }, {
+    "code": "S35",
+    "display": "SLN/ACK - Notification of sterilization lot deletion",
+    "definition": "SLN/ACK - Notification of sterilization lot deletion",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SLR_S28"
+    } ]
+  }, {
+    "code": "S36",
+    "display": "SDN/ACK - Notification of anti-microbial device data",
+    "definition": "SDN/ACK - Notification of anti-microbial device data",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SDR_S31"
+    } ]
+  }, {
+    "code": "S37",
+    "display": "SCN/ACK - Notification of anti-microbial device cycle data",
+    "definition": "SCN/ACK - Notification of anti-microbial device cycle data",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.6"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SDR_S32"
+    } ]
+  }, {
+    "code": "S38",
+    "display": "Containers Prepared for Specimen Collection",
+    "definition": "Describes the event before specimen collection, when containers have been prepared",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S39",
+    "display": "Specimen Collection Successful",
+    "definition": "Describes the event when specimen collection was successful",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S40",
+    "display": "Specimen Collection Unsuccessful",
+    "definition": "Describes the event when specimen collection was not successful and provides a means to document the reason",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S41",
+    "display": "Specimen Departed",
+    "definition": "Describes the event when a specimen has been moved from a location",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S42",
+    "display": "Specimen Arrived",
+    "definition": "Describes the event when a specimen has been moved to a location",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S43",
+    "display": "Specimen Accepted",
+    "definition": "Describes the event when a specimen has been accepted on the receiver side of a specimen movement",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S44",
+    "display": "Specimen Rejected",
+    "definition": "Describes the event when a specimen has been rejected by the receiver side of a specimen movement",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S45",
+    "display": "Specimen Re-identified",
+    "definition": "Describes the event when a specimen has been assigned an identifier",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S46",
+    "display": "Specimen De-identified",
+    "definition": "Describes the event when a specimen identifier has been removed to anonymize it",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S47",
+    "display": "Specimen Sent to Archive",
+    "definition": "Describes the event when a specimen has been moved into storage",
+    "designation": [ {
+      "language": "de",
+      "value": ">"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S48",
+    "display": "Specimen Retrieved from Archive",
+    "definition": "Describes the event when a specimen has been moved out of storage",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S49",
+    "display": "Specimen Disposed of",
+    "definition": "Describes the event when a specimen has been permanently disposed of",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S50",
+    "display": "Specimen Procedure Step Successful , with Derived Specimen(s)",
+    "definition": "Describes the event when one or more specimen(s) has(ve) been created from one or more specimen(s)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S51",
+    "display": "Specimen Procedure Step Successful, no Derived Specimen(s)",
+    "definition": "Describes the event when a specimen has been successfully processed without producing any child specimen(s)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "S52",
+    "display": "Specimen Procedure Step Unsuccessful",
+    "definition": "Describes the event when a specimen could not be successfully processed and provides a means to document the reason",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2022-08-25"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    } ]
+  }, {
+    "code": "T01",
+    "display": "MDM/ACK - Original document notification",
+    "definition": "MDM/ACK - Original document notification",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über die Neuanlage eines Dokuments ohne Inhalt"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MDM_T01"
+    } ]
+  }, {
+    "code": "T02",
+    "display": "MDM/ACK - Original document notification and content",
+    "definition": "MDM/ACK - Original document notification and content",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über die Neuanlage eines Dokuments mit Inhaltsübermittlung"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MDM_T02"
+    } ]
+  }, {
+    "code": "T03",
+    "display": "MDM/ACK - Document status change notification",
+    "definition": "MDM/ACK - Document status change notification",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über die Statusänderung eines Dokuments (ohne Inhalt)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MDM_T01"
+    } ]
+  }, {
+    "code": "T04",
+    "display": "MDM/ACK - Document status change notification and content",
+    "definition": "MDM/ACK - Document status change notification and content",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über die Statusänderung eines Dokuments (mit Inhalt)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MDM_T02"
+    } ]
+  }, {
+    "code": "T05",
+    "display": "MDM/ACK - Document addendum notification",
+    "definition": "MDM/ACK - Document addendum notification",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über die Ergänzung eines Dokuments (ohne Inhalt)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MDM_T01"
+    } ]
+  }, {
+    "code": "T06",
+    "display": "MDM/ACK - Document addendum notification and content",
+    "definition": "MDM/ACK - Document addendum notification and content",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über die Ergänzung eines Dokuments (mit Inhalt)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MDM_T02"
+    } ]
+  }, {
+    "code": "T07",
+    "display": "MDM/ACK - Document edit notification",
+    "definition": "MDM/ACK - Document edit notification",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über die Änderung eines Dokuments (ohne Inhalt)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MDM_T01"
+    } ]
+  }, {
+    "code": "T08",
+    "display": "MDM/ACK - Document edit notification and content",
+    "definition": "MDM/ACK - Document edit notification and content",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über die Änderung eines Dokuments (mit Inhalt)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MDM_T02"
+    } ]
+  }, {
+    "code": "T09",
+    "display": "MDM/ACK - Document replacement notification",
+    "definition": "MDM/ACK - Document replacement notification",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über den Austausch eines Dokuments (ohne Inhalt)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MDM_T01"
+    } ]
+  }, {
+    "code": "T10",
+    "display": "MDM/ACK - Document replacement notification and content",
+    "definition": "MDM/ACK - Document replacement notification and content",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über den Austausch eines Dokuments (mit Inhalt)"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MDM_T02"
+    } ]
+  }, {
+    "code": "T11",
+    "display": "MDM/ACK - Document cancel notification",
+    "definition": "MDM/ACK - Document cancel notification",
+    "designation": [ {
+      "language": "de",
+      "value": "Benachrichtigung über die Löschung eines Dokuments"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "MDM_T01"
+    } ]
+  }, {
+    "code": "T12",
+    "display": "QRY/DOC - Document query",
+    "definition": "QRY/DOC - Document query",
+    "designation": [ {
+      "language": "de",
+      "value": "Dokumentanfrage"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "U01",
+    "display": "ESU/ACK - Automated equipment status update",
+    "definition": "ESU/ACK - Automated equipment status update",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ESU_U01"
+    } ]
+  }, {
+    "code": "U02",
+    "display": "ESR/ACK - Automated equipment status request",
+    "definition": "ESR/ACK - Automated equipment status request",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "ESR_U02"
+    } ]
+  }, {
+    "code": "U03",
+    "display": "SSU/ACK - Specimen status update",
+    "definition": "SSU/ACK - Specimen status update",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SSU_U03"
+    } ]
+  }, {
+    "code": "U04",
+    "display": "SSR/ACK - specimen status request",
+    "definition": "SSR/ACK - specimen status request",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "SSR_U04"
+    } ]
+  }, {
+    "code": "U05",
+    "display": "INU/ACK  - Automated equipment inventory update",
+    "definition": "INU/ACK  - Automated equipment inventory update",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "INU_U05"
+    } ]
+  }, {
+    "code": "U06",
+    "display": "INR/ACK - Automated equipment inventory request",
+    "definition": "INR/ACK - Automated equipment inventory request",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "INR_U06"
+    } ]
+  }, {
+    "code": "U07",
+    "display": "EAC/ACK - Automated equipment command",
+    "definition": "EAC/ACK - Automated equipment command",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "EAC_U07"
+    } ]
+  }, {
+    "code": "U08",
+    "display": "EAR/ACK - Automated equipment response",
+    "definition": "EAR/ACK - Automated equipment response",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "EAR_U08"
+    } ]
+  }, {
+    "code": "U09",
+    "display": "EAN/ACK - Automated equipment notification",
+    "definition": "EAN/ACK - Automated equipment notification",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "EAN_U09"
+    } ]
+  }, {
+    "code": "U10",
+    "display": "TCU/ACK - Automated equipment test code settings update",
+    "definition": "TCU/ACK - Automated equipment test code settings update",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "TCU_U10"
+    } ]
+  }, {
+    "code": "U11",
+    "display": "TCR/ACK - Automated equipment test code settings request",
+    "definition": "TCR/ACK - Automated equipment test code settings request",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "TCU_U10"
+    } ]
+  }, {
+    "code": "U12",
+    "display": "LSU/ACK - Automated equipment log/service update",
+    "definition": "LSU/ACK - Automated equipment log/service update",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "LSU_U12"
+    } ]
+  }, {
+    "code": "U13",
+    "display": "LSR/ACK - Automated equipment log/service request",
+    "definition": "LSR/ACK - Automated equipment log/service request",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "LSU_U12"
+    } ]
+  }, {
+    "code": "U14",
+    "display": "INR/ACK – Automated Equipment Inventory Request",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2016-03-16"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.9"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "INR_U14"
+    } ]
+  }, {
+    "code": "V01",
+    "display": "VXQ - Query for vaccination record",
+    "definition": "VXQ - Query for vaccination record",
+    "designation": [ {
+      "language": "de",
+      "value": "Anfrage nach Impfstatus eines Patienten"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2016-07-23"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "V02",
+    "display": "VXX - Response to vaccination query returning multiple PID matches",
+    "definition": "VXX - Response to vaccination query returning multiple PID matches",
+    "designation": [ {
+      "language": "de",
+      "value": "Antwort auf Impfstatusanfrage bei nicht-eindeutiger Patienten-ID"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "V03",
+    "display": "VXR - Vaccination record response",
+    "definition": "VXR - Vaccination record response",
+    "designation": [ {
+      "language": "de",
+      "value": "Antwort auf Impfstatusanfrage zu einem Patienten"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "V04",
+    "display": "VXU - Unsolicited vaccination record update",
+    "definition": "VXU - Unsolicited vaccination record update",
+    "designation": [ {
+      "language": "de",
+      "value": "unaufgeforderte Änderung zu dem Impfstatus eines Patienten"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    }, {
+      "code": "msgstruct",
+      "valueCode": "VXU_V04"
+    } ]
+  }, {
+    "code": "W01",
+    "display": "ORU - Waveform result, unsolicited transmission of requested information",
+    "definition": "ORU - Waveform result, unsolicited transmission of requested information",
+    "designation": [ {
+      "language": "de",
+      "value": "unaufgeforderte Übermittlung von Signaldaten"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "W02",
+    "display": "QRF - Waveform result, response to query",
+    "definition": "QRF - Waveform result, response to query",
+    "designation": [ {
+      "language": "de",
+      "value": "angeforderte Übermittlung von Signaldaten"
+    } ],
+    "property": [ {
+      "code": "comment",
+      "valueString": "Deprecated"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  }, {
+    "code": "X01",
+    "display": "PEX - Product experience",
+    "property": [ {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2023-02-01"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3"
+    } ]
+  } ]
+}

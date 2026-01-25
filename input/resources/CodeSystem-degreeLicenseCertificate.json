@@ -1,0 +1,737 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "degreeLicenseCertificate",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-degreeLicenseCertificate.html\"><code>http://terminology.hl7.org/v2plusvocab/CodeSystem/degreeLicenseCertificate</code></a></li></ul></div>"
+  },
+  "extension": [ {
+    "url": "http://terminology.hl7.org/v2plusvocab/StructureDefinition/codesystem-v2versionCreated",
+    "valueString": "2.9"
+  }, {
+    "url": "http://terminology.hl7.org/v2plusvocab/StructureDefinition/codesystem-versionHistory",
+    "valueString": "generate correct history somehow"
+  }, {
+    "url": "http://terminology.hl7.org/v2plusvocab/StructureDefinition/codesystem-tableNo",
+    "valueString": "0360"
+  } ],
+  "url": "http://terminology.hl7.org/v2plusvocab/CodeSystem/degreeLicenseCertificate",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.18.220"
+  } ],
+  "version": "2.1.1",
+  "name": "DegreeLicenseCertificate",
+  "title": "Degree/License/Certificate (2.9 - 2.1.1)",
+  "status": "active",
+  "experimental": true,
+  "publisher": "HL7 Inc., 2026",
+  "description": "Code system of concepts specifying an educational degree (e.g., MD).  Used in the CNN datatype (names and identifiers of clinicians) in Version 2 messaging.  Used in HL7 Version 2.x messaging in the CNN segment; note that in releases of HL7 prior to 2.3.1, was also used in person names (XPN), but this use was deprecated, then withdrawn in 2.7.",
+  "copyright": "HL7 Inc., 2026",
+  "caseSensitive": true,
+  "compositional": false,
+  "content": "complete",
+  "property": [ {
+    "code": "versionIntroduced",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#versionIntroduced",
+    "description": "version when was this code introduced",
+    "type": "string"
+  }, {
+    "code": "versionDeprecated",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#versionDeprecated",
+    "description": "version when was this code deprecated",
+    "type": "string"
+  }, {
+    "code": "status",
+    "uri": "http://hl7.org/fhir/concept-properties#status",
+    "description": "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type": "code"
+  }, {
+    "code": "comment",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#comment",
+    "description": "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type": "string"
+  }, {
+    "code": "usage",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#usage",
+    "description": "usage notes for this code",
+    "type": "string"
+  }, {
+    "code": "modified",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#modified",
+    "description": "date of last modification",
+    "type": "dateTime"
+  } ],
+  "concept": [ {
+    "code": "AA",
+    "display": "Associate of Arts",
+    "definition": "Associate of Arts",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "AAS",
+    "display": "Associate of Applied Science",
+    "definition": "Associate of Applied Science",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "ABA",
+    "display": "Associate of Business Administration",
+    "definition": "Associate of Business Administration",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "AE",
+    "display": "Associate of Engineering",
+    "definition": "Associate of Engineering",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "AS",
+    "display": "Associate of Science",
+    "definition": "Associate of Science",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "BA",
+    "display": "Bachelor of Arts",
+    "definition": "Bachelor of Arts",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "BBA",
+    "display": "Bachelor of Business Administration",
+    "definition": "Bachelor of Business Administration",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "BE",
+    "display": "Bachelor or Engineering",
+    "definition": "Bachelor or Engineering",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "BFA",
+    "display": "Bachelor of Fine Arts",
+    "definition": "Bachelor of Fine Arts",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "BN",
+    "display": "Bachelor of Nursing",
+    "definition": "Bachelor of Nursing",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "BS",
+    "display": "Bachelor of Science",
+    "definition": "Bachelor of Science",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "BSL",
+    "display": "Bachelor of Science - Law",
+    "definition": "Bachelor of Science - Law",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "BSN",
+    "display": "Bachelor on Science - Nursing",
+    "definition": "Bachelor on Science - Nursing",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BT",
+    "display": "Bachelor of Theology",
+    "definition": "Bachelor of Theology",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "CANP",
+    "display": "Certified Adult Nurse Practitioner",
+    "definition": "Certified Adult Nurse Practitioner",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CER",
+    "display": "Certificate",
+    "definition": "Certificate",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "CMA",
+    "display": "Certified Medical Assistant",
+    "definition": "Certified Medical Assistant",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CNM",
+    "display": "Certified Nurse Midwife",
+    "definition": "Certified Nurse Midwife",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CNP",
+    "display": "Certified Nurse Practitioner",
+    "definition": "Certified Nurse Practitioner",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CNS",
+    "display": "Certified Nurse Specialist",
+    "definition": "Certified Nurse Specialist",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CPNP",
+    "display": "Certified Pediatric Nurse Practitioner",
+    "definition": "Certified Pediatric Nurse Practitioner",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CRN",
+    "display": "Certified Registered Nurse",
+    "definition": "Certified Registered Nurse",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CTR",
+    "display": "Certified Tumor Registrar",
+    "definition": "Certified Tumor Registrar",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8"
+    } ]
+  }, {
+    "code": "DBA",
+    "display": "Doctor of Business Administration",
+    "definition": "Doctor of Business Administration",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "DED",
+    "display": "Doctor of Education",
+    "definition": "Doctor of Education",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "DIP",
+    "display": "Diploma",
+    "definition": "Diploma",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "DO",
+    "display": "Doctor of Osteopathy",
+    "definition": "Doctor of Osteopathy",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "EMT",
+    "display": "Emergency Medical Technician",
+    "definition": "Emergency Medical Technician",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "EMTP",
+    "display": "Emergency Medical Technician - Paramedic",
+    "definition": "Emergency Medical Technician - Paramedic",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "FPNP",
+    "display": "Family Practice Nurse Practitioner",
+    "definition": "Family Practice Nurse Practitioner",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "HS",
+    "display": "High School Graduate",
+    "definition": "High School Graduate",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "JD",
+    "display": "Juris Doctor",
+    "definition": "Juris Doctor",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "MA",
+    "display": "Master of Arts",
+    "definition": "Master of Arts",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "MBA",
+    "display": "Master of Business Administration",
+    "definition": "Master of Business Administration",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "MCE",
+    "display": "Master of Civil Engineering",
+    "definition": "Master of Civil Engineering",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "MD",
+    "display": "Doctor of Medicine",
+    "definition": "Doctor of Medicine",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "MDA",
+    "display": "Medical Assistant",
+    "definition": "Medical Assistant",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "MDI",
+    "display": "Master of Divinity",
+    "definition": "Master of Divinity",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "ME",
+    "display": "Master of Engineering",
+    "definition": "Master of Engineering",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "MED",
+    "display": "Master of Education",
+    "definition": "Master of Education",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "MEE",
+    "display": "Master of Electrical Engineering",
+    "definition": "Master of Electrical Engineering",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "MFA",
+    "display": "Master of Fine Arts",
+    "definition": "Master of Fine Arts",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "MME",
+    "display": "Master of Mechanical Engineering",
+    "definition": "Master of Mechanical Engineering",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "MS",
+    "display": "Master of Science",
+    "definition": "Master of Science",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "MSL",
+    "display": "Master of Science - Law",
+    "definition": "Master of Science - Law",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "MSN",
+    "display": "Master of Science - Nursing",
+    "definition": "Master of Science - Nursing",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "MT",
+    "display": "Medical Technician",
+    "definition": "Medical Technician",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "MTH",
+    "display": "Master of Theology",
+    "definition": "Master of Theology",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    } ]
+  }, {
+    "code": "NG",
+    "display": "Non-Graduate",
+    "definition": "Non-Graduate",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "NP",
+    "display": "Nurse Practitioner",
+    "definition": "Nurse Practitioner",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PA",
+    "display": "Physician Assistant",
+    "definition": "Physician Assistant",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PHD",
+    "display": "Doctor of Philosophy",
+    "definition": "Doctor of Philosophy",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "PHE",
+    "display": "Doctor of Engineering",
+    "definition": "Doctor of Engineering",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "PHS",
+    "display": "Doctor of Science",
+    "definition": "Doctor of Science",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "PN",
+    "display": "Advanced Practice Nurse",
+    "definition": "Advanced Practice Nurse",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PharmD",
+    "display": "Doctor of Pharmacy",
+    "definition": "Doctor of Pharmacy",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.4"
+    } ]
+  }, {
+    "code": "RMA",
+    "display": "Registered Medical Assistant",
+    "definition": "Registered Medical Assistant",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "RN",
+    "display": "Registered Nurse",
+    "definition": "Registered Nurse",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    } ]
+  }, {
+    "code": "RPH",
+    "display": "Registered Pharmacist",
+    "definition": "Registered Pharmacist",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SEC",
+    "display": "Secretarial Certificate",
+    "definition": "Secretarial Certificate",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  }, {
+    "code": "TS",
+    "display": "Trade School Graduate",
+    "definition": "Trade School Graduate",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.3.1"
+    } ]
+  } ]
+}

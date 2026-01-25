@@ -1,0 +1,4203 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "specimenType",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-specimenType.html\"><code>http://terminology.hl7.org/v2plusvocab/CodeSystem/specimenType</code></a></li></ul></div>"
+  },
+  "extension": [ {
+    "url": "http://terminology.hl7.org/v2plusvocab/StructureDefinition/codesystem-v2versionCreated",
+    "valueString": "2.9"
+  }, {
+    "url": "http://terminology.hl7.org/v2plusvocab/StructureDefinition/codesystem-versionHistory",
+    "valueString": "generate correct history somehow"
+  }, {
+    "url": "http://terminology.hl7.org/v2plusvocab/StructureDefinition/codesystem-tableNo",
+    "valueString": "0487"
+  } ],
+  "url": "http://terminology.hl7.org/v2plusvocab/CodeSystem/specimenType",
+  "identifier": [ {
+    "system": "urn:ietf:rfc:3986",
+    "value": "urn:oid:2.16.840.1.113883.18.311"
+  } ],
+  "version": "1.2.1",
+  "name": "SpecimenType",
+  "title": "Specimen Type (2.9 - 1.2.1)",
+  "status": "active",
+  "experimental": true,
+  "publisher": "HL7 Inc., 2026",
+  "description": "HL7-defined code system of concepts that describe the precise nature of an entity that may be used as the source material for an observation.  This is one of two code systems that are used instead of table 0070 (code system 2.16.840.1.113883.18.28) which conflated specimen types and specimen collection methods.   Used in HL7 Version 2.x messaging in the SPM segment.",
+  "copyright": "HL7 Inc., 2026",
+  "caseSensitive": true,
+  "compositional": false,
+  "content": "complete",
+  "property": [ {
+    "code": "versionIntroduced",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#versionIntroduced",
+    "description": "version when was this code introduced",
+    "type": "string"
+  }, {
+    "code": "versionDeprecated",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#versionDeprecated",
+    "description": "version when was this code deprecated",
+    "type": "string"
+  }, {
+    "code": "status",
+    "uri": "http://hl7.org/fhir/concept-properties#status",
+    "description": "A code that indicates the status of the concept. Typical values are active, experimental, deprecated, and retired",
+    "type": "code"
+  }, {
+    "code": "comment",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#comment",
+    "description": "A string that provides additional detail pertinent to the use or understanding of the concept",
+    "type": "string"
+  }, {
+    "code": "usage",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#usage",
+    "description": "usage notes for this code",
+    "type": "string"
+  }, {
+    "code": "modified",
+    "uri": "http://terminology.hl7.org/v2plusvocab/CodeSystem/Property#modified",
+    "description": "date of last modification",
+    "type": "dateTime"
+  } ],
+  "concept": [ {
+    "code": "ABS",
+    "display": "Abscess",
+    "definition": "Abscess",
+    "designation": [ {
+      "language": "de",
+      "value": "Abszeß"
+    } ],
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ACNE",
+    "display": "Tissue, Acne",
+    "definition": "Tissue, Acne",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ACNFLD",
+    "display": "Fluid, Acne",
+    "definition": "Fluid, Acne",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "AIRS",
+    "display": "Air Sample",
+    "definition": "Air Sample",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ALL",
+    "display": "Allograft",
+    "definition": "Allograft",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "AMN",
+    "display": "Amniotic fluid",
+    "definition": "Amniotic fluid",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "AMP",
+    "display": "Amputation",
+    "definition": "Amputation",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ANGI",
+    "display": "Catheter Tip, Angio",
+    "definition": "Catheter Tip, Angio",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ARTC",
+    "display": "Catheter Tip, Arterial",
+    "definition": "Catheter Tip, Arterial",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ASERU",
+    "display": "Serum, Acute",
+    "definition": "Serum, Acute",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ASP",
+    "display": "Aspirate",
+    "definition": "Aspirate",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ATTE",
+    "display": "Environment, Attest",
+    "definition": "Environment, Attest",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2016-03-12"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "AUTOA",
+    "display": "Environmental, Autoclave Ampule",
+    "definition": "Environmental, Autoclave Ampule",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    } ]
+  }, {
+    "code": "AUTOC",
+    "display": "Environmental, Autoclave Capsule",
+    "definition": "Environmental, Autoclave Capsule",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "status",
+      "valueCode": "inactive"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2016-03-12"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "AUTP",
+    "display": "Autopsy",
+    "definition": "Autopsy",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BBL",
+    "display": "Blood bag",
+    "definition": "Blood bag",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BCYST",
+    "display": "Cyst, Baker's",
+    "definition": "Cyst, Baker's",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BDY",
+    "display": "Whole body",
+    "definition": "Whole body",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Body submitted for autopsy / carcass submitted"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "BIFL",
+    "display": "Bile Fluid",
+    "definition": "Bile Fluid",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "BITE",
+    "display": "Bite",
+    "definition": "Bite",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Conditions"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BLD",
+    "display": "Whole blood",
+    "definition": "Whole blood",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "BLDA",
+    "display": "Blood arterial",
+    "definition": "Blood arterial",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "BLDCO",
+    "display": "Cord blood",
+    "definition": "Cord blood",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "BLDV",
+    "display": "Blood venous",
+    "definition": "Blood venous",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "BLEB",
+    "display": "Bleb",
+    "definition": "Bleb",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition, Fluid/Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BLIST",
+    "display": "Blister",
+    "definition": "Blister",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition, Fluid/Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BOIL",
+    "display": "Boil",
+    "definition": "Boil",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BON",
+    "display": "Bone",
+    "definition": "Bone",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BOWL",
+    "display": "Bowel contents",
+    "definition": "Bowel contents",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BPH",
+    "display": "Basophils",
+    "definition": "Basophils",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "BPU",
+    "display": "Blood product unit",
+    "definition": "Blood product unit",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BRN",
+    "display": "Burn",
+    "definition": "Burn",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BRSH",
+    "display": "Brush",
+    "definition": "Brush",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Product; Brush or brushing (these may be 2 separate entries as in a physical brush or a portion thereof vs the substance obtained after a surface has been brushed)"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BRTH",
+    "display": "Breath (use EXHLD)",
+    "definition": "Breath (use EXHLD)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BRUS",
+    "display": "Brushing",
+    "definition": "Brushing",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Product"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BUB",
+    "display": "Bubo",
+    "definition": "Bubo",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BULLA",
+    "display": "Bulla/Bullae",
+    "definition": "Bulla/Bullae",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "BX",
+    "display": "Biopsy",
+    "definition": "Biopsy",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CALC",
+    "display": "Calculus (=Stone)",
+    "definition": "Calculus (=Stone)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CARBU",
+    "display": "Carbuncle",
+    "definition": "Carbuncle",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CAT",
+    "display": "Catheter",
+    "definition": "Catheter",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CBITE",
+    "display": "Bite, Cat",
+    "definition": "Bite, Cat",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Conditions"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CDM",
+    "display": "Cardiac muscle",
+    "definition": "Cardiac muscle",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "CLIPP",
+    "display": "Clippings",
+    "definition": "Clippings",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CNJT",
+    "display": "Conjunctiva",
+    "definition": "Conjunctiva",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CNL",
+    "display": "Cannula",
+    "definition": "Cannula",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "COL",
+    "display": "Colostrum",
+    "definition": "Colostrum",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CONE",
+    "display": "Biospy, Cone",
+    "definition": "Biospy, Cone",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CSCR",
+    "display": "Scratch, Cat",
+    "definition": "Scratch, Cat",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CSERU",
+    "display": "Serum, Convalescent",
+    "definition": "Serum, Convalescent",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CSF",
+    "display": "Cerebral spinal fluid",
+    "definition": "Cerebral spinal fluid",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "CSITE",
+    "display": "Catheter Insertion Site",
+    "definition": "Catheter Insertion Site",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CSMY",
+    "display": "Fluid,  Cystostomy Tube",
+    "definition": "Fluid,  Cystostomy Tube",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CST",
+    "display": "Fluid, Cyst",
+    "definition": "Fluid, Cyst",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CSVR",
+    "display": "Blood, Cell Saver",
+    "definition": "Blood, Cell Saver",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Transfusion"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CTP",
+    "display": "Catheter tip",
+    "definition": "Catheter tip",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CUR",
+    "display": "Curretage",
+    "definition": "Curretage",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Uterine specimen obtained by curettage = Currettings"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "CVM",
+    "display": "Cervical Mucus",
+    "definition": "Cervical Mucus",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "CVPS",
+    "display": "Site, CVP",
+    "definition": "Site, CVP",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Site"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CVPT",
+    "display": "Catheter Tip, CVP",
+    "definition": "Catheter Tip, CVP",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CYN",
+    "display": "Nodule, Cystic",
+    "definition": "Nodule, Cystic",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "CYST",
+    "display": "Cyst",
+    "definition": "Cyst",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "DBITE",
+    "display": "Bite, Dog",
+    "definition": "Bite, Dog",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Conditions"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "DCS",
+    "display": "Sputum, Deep Cough",
+    "definition": "Sputum, Deep Cough",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "DEC",
+    "display": "Ulcer, Decubitus",
+    "definition": "Ulcer, Decubitus",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "DEION",
+    "display": "Environmental, Water  (Deionized)",
+    "definition": "Environmental, Water  (Deionized)",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "DIA",
+    "display": "Dialysate",
+    "definition": "Dialysate",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "DIAF",
+    "display": "Dialysis Fluid",
+    "definition": "Dialysis Fluid",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid used for dialysis - is a product"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "DISCHG",
+    "display": "Discharge",
+    "definition": "Discharge",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "DIV",
+    "display": "Diverticulum",
+    "definition": "Diverticulum",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "DRN",
+    "display": "Drain",
+    "definition": "Drain",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "DRNG",
+    "display": "Drainage, Tube",
+    "definition": "Drainage, Tube",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "DRNGP",
+    "display": "Drainage, Penrose",
+    "definition": "Drainage, Penrose",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "DUFL",
+    "display": "Duodenal fluid",
+    "definition": "Duodenal fluid",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "EARW",
+    "display": "Ear wax (cerumen)",
+    "definition": "Ear wax (cerumen)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "EBRUSH",
+    "display": "Brush, Esophageal",
+    "definition": "Brush, Esophageal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Product"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "EEYE",
+    "display": "Environmental, Eye Wash",
+    "definition": "Environmental, Eye Wash",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "EFF",
+    "display": "Environmental, Effluent",
+    "definition": "Environmental, Effluent",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "EFFUS",
+    "display": "Effusion",
+    "definition": "Effusion",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "EFOD",
+    "display": "Environmental, Food",
+    "definition": "Environmental, Food",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "EISO",
+    "display": "Environmental, Isolette",
+    "definition": "Environmental, Isolette",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ELT",
+    "display": "Electrode",
+    "definition": "Electrode",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ENVIR",
+    "display": "Environmental, Unidentified Substance",
+    "definition": "Environmental, Unidentified Substance",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "EOS",
+    "display": "Eosinophils",
+    "definition": "Eosinophils",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "EOTH",
+    "display": "Environmental, Other Substance",
+    "definition": "Environmental, Other Substance",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment; (Substance is Known but not in code Table)"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ESOI",
+    "display": "Environmental, Soil",
+    "definition": "Environmental, Soil",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ESOS",
+    "display": "Environmental, Solution (Sterile)",
+    "definition": "Environmental, Solution (Sterile)",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ETA",
+    "display": "Aspirate,  Endotrach",
+    "definition": "Aspirate,  Endotrach",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Aspirate"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ETTP",
+    "display": "Catheter Tip, Endotracheal",
+    "definition": "Catheter Tip, Endotracheal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ETTUB",
+    "display": "Tube, Endotracheal",
+    "definition": "Tube, Endotracheal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "EWHI",
+    "display": "Environmental, Whirlpool",
+    "definition": "Environmental, Whirlpool",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "EXG",
+    "display": "Gas, exhaled (=breath)",
+    "definition": "Gas, exhaled (=breath)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "EXS",
+    "display": "Shunt, External",
+    "definition": "Shunt, External",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "EXUDTE",
+    "display": "Exudate",
+    "definition": "Exudate",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "FAW",
+    "display": "Environmental, Water  (Well)",
+    "definition": "Environmental, Water  (Well)",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "FBLOOD",
+    "display": "Blood, Fetal",
+    "definition": "Blood, Fetal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "FGA",
+    "display": "Fluid,  Abdomen",
+    "definition": "Fluid,  Abdomen",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "FIB",
+    "display": "Fibroblasts",
+    "definition": "Fibroblasts",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "FIST",
+    "display": "Fistula",
+    "definition": "Fistula",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "FLD",
+    "display": "Fluid, Other",
+    "definition": "Fluid, Other",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "FLT",
+    "display": "Filter",
+    "definition": "Filter",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "FLU",
+    "display": "Fluid, Body unsp",
+    "definition": "Fluid, Body unsp",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "FLUID",
+    "display": "Fluid",
+    "definition": "Fluid",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "FOLEY",
+    "display": "Catheter Tip, Foley",
+    "definition": "Catheter Tip, Foley",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "FRS",
+    "display": "Fluid, Respiratory",
+    "definition": "Fluid, Respiratory",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "FSCLP",
+    "display": "Scalp, Fetal",
+    "definition": "Scalp, Fetal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "FUR",
+    "display": "Furuncle",
+    "definition": "Furuncle",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GAS",
+    "display": "Gas",
+    "definition": "Gas",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GASA",
+    "display": "Aspirate, Gastric",
+    "definition": "Aspirate, Gastric",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Aspirate"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GASAN",
+    "display": "Antrum, Gastric",
+    "definition": "Antrum, Gastric",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GASBR",
+    "display": "Brushing, Gastric",
+    "definition": "Brushing, Gastric",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Product"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GASD",
+    "display": "Drainage, Gastric",
+    "definition": "Drainage, Gastric",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GAST",
+    "display": "Fluid/contents, Gastric",
+    "definition": "Fluid/contents, Gastric",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GENL",
+    "display": "Genital lochia",
+    "definition": "Genital lochia",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "GENV",
+    "display": "Genital vaginal",
+    "definition": "Genital vaginal",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GRAFT",
+    "display": "Graft",
+    "definition": "Graft",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GRAFTS",
+    "display": "Graft Site",
+    "definition": "Graft Site",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.7"
+    } ]
+  }, {
+    "code": "GRANU",
+    "display": "Granuloma",
+    "definition": "Granuloma",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GROSH",
+    "display": "Catheter, Groshong",
+    "definition": "Catheter, Groshong",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GSOL",
+    "display": "Solution, Gastrostomy",
+    "definition": "Solution, Gastrostomy",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Product"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GSPEC",
+    "display": "Biopsy, Gastric",
+    "definition": "Biopsy, Gastric",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GT",
+    "display": "Tube, Gastric",
+    "definition": "Tube, Gastric",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "GTUBE",
+    "display": "Drainage Tube, Drainage (Gastrostomy)",
+    "definition": "Drainage Tube, Drainage (Gastrostomy)",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "HAR",
+    "display": "Hair",
+    "definition": "Hair",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "HBITE",
+    "display": "Bite, Human",
+    "definition": "Bite, Human",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Conditions"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "HBLUD",
+    "display": "Blood, Autopsy",
+    "definition": "Blood, Autopsy",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "HEMAQ",
+    "display": "Catheter Tip, Hemaquit",
+    "definition": "Catheter Tip, Hemaquit",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "HEMO",
+    "display": "Catheter Tip, Hemovac",
+    "definition": "Catheter Tip, Hemovac",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "HERNI",
+    "display": "Tissue, Herniated",
+    "definition": "Tissue, Herniated",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "HEV",
+    "display": "Drain, Hemovac",
+    "definition": "Drain, Hemovac",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "HIC",
+    "display": "Catheter, Hickman",
+    "definition": "Catheter, Hickman",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "HYDC",
+    "display": "Fluid, Hydrocele",
+    "definition": "Fluid, Hydrocele",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "IBITE",
+    "display": "Bite, Insect",
+    "definition": "Bite, Insect",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Conditions"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ICYST",
+    "display": "Cyst, Inclusion",
+    "definition": "Cyst, Inclusion",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "IDC",
+    "display": "Catheter Tip, Indwelling",
+    "definition": "Catheter Tip, Indwelling",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "IHG",
+    "display": "Gas, Inhaled",
+    "definition": "Gas, Inhaled",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ILEO",
+    "display": "Drainage, Ileostomy",
+    "definition": "Drainage, Ileostomy",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ILLEG",
+    "display": "Source of Specimen Is Illegible",
+    "definition": "Source of Specimen Is Illegible",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "IMP",
+    "display": "Implant",
+    "definition": "Implant",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "INCI",
+    "display": "Site, Incision/Surgical",
+    "definition": "Site, Incision/Surgical",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Site"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "INFIL",
+    "display": "Infiltrate",
+    "definition": "Infiltrate",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "INS",
+    "display": "Insect",
+    "definition": "Insect",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Object"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "INTRD",
+    "display": "Catheter Tip, Introducer",
+    "definition": "Catheter Tip, Introducer",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ISLT",
+    "display": "Isolate",
+    "definition": "Isolate",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "IT",
+    "display": "Intubation tube",
+    "definition": "Intubation tube",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "IUD",
+    "display": "Intrauterine Device",
+    "definition": "Intrauterine Device",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device (Common Usage)"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "IVCAT",
+    "display": "Catheter Tip, IV",
+    "definition": "Catheter Tip, IV",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "IVFLD",
+    "display": "Fluid, IV",
+    "definition": "Fluid, IV",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "IVTIP",
+    "display": "Tubing Tip, IV",
+    "definition": "Tubing Tip, IV",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "JEJU",
+    "display": "Drainage, Jejunal",
+    "definition": "Drainage, Jejunal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "JNTFLD",
+    "display": "Fluid, Joint",
+    "definition": "Fluid, Joint",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "JP",
+    "display": "Drainage, Jackson Pratt",
+    "definition": "Drainage, Jackson Pratt",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "KELOI",
+    "display": "Lavage",
+    "definition": "Lavage",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Product"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "KIDFLD",
+    "display": "Fluid, Kidney",
+    "definition": "Fluid, Kidney",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "LAVG",
+    "display": "Lavage, Bronhial",
+    "definition": "Lavage, Bronhial",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Product"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "LAVGG",
+    "display": "Lavage, Gastric",
+    "definition": "Lavage, Gastric",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Product"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "LAVGP",
+    "display": "Lavage, Peritoneal",
+    "definition": "Lavage, Peritoneal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Product"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "LAVPG",
+    "display": "Lavage, Pre-Bronch",
+    "definition": "Lavage, Pre-Bronch",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Product"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "LENS1",
+    "display": "Contact Lens",
+    "definition": "Contact Lens",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "LENS2",
+    "display": "Contact Lens Case",
+    "definition": "Contact Lens Case",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "LESN",
+    "display": "Lesion",
+    "definition": "Lesion",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "LIQ",
+    "display": "Liquid, Unspecified",
+    "definition": "Liquid, Unspecified",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "LIQO",
+    "display": "Liquid, Other",
+    "definition": "Liquid, Other",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "LNA",
+    "display": "Line arterial",
+    "definition": "Line arterial",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Arterial blood collected via arterial line"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "LNV",
+    "display": "Line venous",
+    "definition": "Line venous",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Venous blood collected via venous line"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "LSAC",
+    "display": "Fluid, Lumbar Sac",
+    "definition": "Fluid, Lumbar Sac",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "LYM",
+    "display": "Lymphocytes",
+    "definition": "Lymphocytes",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "MAC",
+    "display": "Macrophages",
+    "definition": "Macrophages",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "MAHUR",
+    "display": "Catheter Tip, Makurkour",
+    "definition": "Catheter Tip, Makurkour",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "MAR",
+    "display": "Marrow",
+    "definition": "Marrow",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Bone marrow"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "MASS",
+    "display": "Mass",
+    "definition": "Mass",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "MBLD",
+    "display": "Blood, Menstrual",
+    "definition": "Blood, Menstrual",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "MEC",
+    "display": "Meconium",
+    "definition": "Meconium",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "MILK",
+    "display": "Breast milk",
+    "definition": "Breast milk",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Mother's milk specimen"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "MLK",
+    "display": "Milk",
+    "definition": "Milk",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Food specimen"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "MUCOS",
+    "display": "Mucosa",
+    "definition": "Mucosa",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "MUCUS",
+    "display": "Mucus",
+    "definition": "Mucus",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "NAIL",
+    "display": "Nail",
+    "definition": "Nail",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Finger or toe nail sample"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "NASDR",
+    "display": "Drainage, Nasal",
+    "definition": "Drainage, Nasal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "NEDL",
+    "display": "Needle",
+    "definition": "Needle",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "NEPH",
+    "display": "Site, Nephrostomy",
+    "definition": "Site, Nephrostomy",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Site"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "NGASP",
+    "display": "Aspirate, Nasogastric",
+    "definition": "Aspirate, Nasogastric",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Aspirate"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "NGAST",
+    "display": "Drainage, Nasogastric",
+    "definition": "Drainage, Nasogastric",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "NGS",
+    "display": "Site, Naso/Gastric",
+    "definition": "Site, Naso/Gastric",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Site"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "NODUL",
+    "display": "Nodule(s)",
+    "definition": "Nodule(s)",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "NSECR",
+    "display": "Secretion, Nasal",
+    "definition": "Secretion, Nasal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ORH",
+    "display": "Other",
+    "definition": "Other",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "ORL",
+    "display": "Lesion, Oral",
+    "definition": "Lesion, Oral",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition (Common Usage)"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "OTH",
+    "display": "Source, Other",
+    "definition": "Source, Other",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PACEM",
+    "display": "Pacemaker",
+    "definition": "Pacemaker",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PAFL",
+    "display": "Pancreatic fluid",
+    "definition": "Pancreatic fluid",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "PCFL",
+    "display": "Fluid, Pericardial",
+    "definition": "Fluid, Pericardial",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PDSIT",
+    "display": "Site, Peritoneal Dialysis",
+    "definition": "Site, Peritoneal Dialysis",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Site"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PDTS",
+    "display": "Site, Peritoneal Dialysis Tunnel",
+    "definition": "Site, Peritoneal Dialysis Tunnel",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Site"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PELVA",
+    "display": "Abscess, Pelvic",
+    "definition": "Abscess, Pelvic",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PENIL",
+    "display": "Lesion, Penile",
+    "definition": "Lesion, Penile",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition (Common Usage)"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PERIA",
+    "display": "Abscess, Perianal",
+    "definition": "Abscess, Perianal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition, Abscess & Body Part"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PILOC",
+    "display": "Cyst, Pilonidal",
+    "definition": "Cyst, Pilonidal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PINS",
+    "display": "Site, Pin",
+    "definition": "Site, Pin",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Site"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PIS",
+    "display": "Site, Pacemaker Insetion",
+    "definition": "Site, Pacemaker Insetion",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Site"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PLAN",
+    "display": "Plant Material",
+    "definition": "Plant Material",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Object"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PLAS",
+    "display": "Plasma",
+    "definition": "Plasma",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PLB",
+    "display": "Plasma bag",
+    "definition": "Plasma bag",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PLC",
+    "display": "Placenta",
+    "definition": "Placenta",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "PLEVS",
+    "display": "Serum, Peak Level",
+    "definition": "Serum, Peak Level",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PLR",
+    "display": "Pleural fluid (thoracentesis fluid)",
+    "definition": "Pleural fluid (thoracentesis fluid)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "PMN",
+    "display": "Polymorphonuclear neutrophils",
+    "definition": "Polymorphonuclear neutrophils",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "PND",
+    "display": "Drainage, Penile",
+    "definition": "Drainage, Penile",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "POL",
+    "display": "Polyps",
+    "definition": "Polyps",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "POPGS",
+    "display": "Graft Site, Popliteal",
+    "definition": "Graft Site, Popliteal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "POPLG",
+    "display": "Graft, Popliteal",
+    "definition": "Graft, Popliteal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "POPLV",
+    "display": "Site, Popliteal Vein",
+    "definition": "Site, Popliteal Vein",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Site"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PORTA",
+    "display": "Catheter, Porta",
+    "definition": "Catheter, Porta",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PPP",
+    "display": "Plasma, Platelet poor",
+    "definition": "Plasma, Platelet poor",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PROST",
+    "display": "Prosthetic Device",
+    "definition": "Prosthetic Device",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PRP",
+    "display": "Plasma, Platelet rich",
+    "definition": "Plasma, Platelet rich",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PSC",
+    "display": "Pseudocyst",
+    "definition": "Pseudocyst",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PUNCT",
+    "display": "Wound, Puncture",
+    "definition": "Wound, Puncture",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PUS",
+    "display": "Pus",
+    "definition": "Pus",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5.1"
+    } ]
+  }, {
+    "code": "PUSFR",
+    "display": "Pustule",
+    "definition": "Pustule",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "PUST",
+    "display": "Pus",
+    "definition": "Pus",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "QC3",
+    "display": "Quality Control",
+    "definition": "Quality Control",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "RANDU",
+    "display": "Urine, Random",
+    "definition": "Urine, Random",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "RBC",
+    "display": "Erythrocytes",
+    "definition": "Erythrocytes",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "RBITE",
+    "display": "Bite, Reptile",
+    "definition": "Bite, Reptile",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Conditions"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "RECT",
+    "display": "Drainage, Rectal",
+    "definition": "Drainage, Rectal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "RECTA",
+    "display": "Abscess, Rectal",
+    "definition": "Abscess, Rectal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "RENALC",
+    "display": "Cyst, Renal",
+    "definition": "Cyst, Renal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "RENC",
+    "display": "Fluid, Renal Cyst",
+    "definition": "Fluid, Renal Cyst",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "RES",
+    "display": "Respiratory",
+    "definition": "Respiratory",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition (Ambiguous)"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SAL",
+    "display": "Saliva",
+    "definition": "Saliva",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SCAR",
+    "display": "Tissue, Keloid (Scar)",
+    "definition": "Tissue, Keloid (Scar)",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SCLV",
+    "display": "Catheter Tip, Subclavian",
+    "definition": "Catheter Tip, Subclavian",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SCROA",
+    "display": "Abscess, Scrotal",
+    "definition": "Abscess, Scrotal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SECRE",
+    "display": "Secretion(s)",
+    "definition": "Secretion(s)",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid/Secretion"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SER",
+    "display": "Serum",
+    "definition": "Serum",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SHU",
+    "display": "Site, Shunt",
+    "definition": "Site, Shunt",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Site"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SHUNF",
+    "display": "Fluid, Shunt",
+    "definition": "Fluid, Shunt",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Fluid"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SHUNT",
+    "display": "Shunt",
+    "definition": "Shunt",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SITE",
+    "display": "Site",
+    "definition": "Site",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Site"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SKBP",
+    "display": "Biopsy, Skin",
+    "definition": "Biopsy, Skin",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SKN",
+    "display": "Skin",
+    "definition": "Skin",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SMM",
+    "display": "Mass, Sub-Mandibular",
+    "definition": "Mass, Sub-Mandibular",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SMN",
+    "display": "Seminal fluid",
+    "definition": "Seminal fluid",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "SNV",
+    "display": "Fluid, synovial (Joint fluid)",
+    "definition": "Fluid, synovial (Joint fluid)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SPRM",
+    "display": "Spermatozoa",
+    "definition": "Spermatozoa",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SPRP",
+    "display": "Catheter Tip, Suprapubic",
+    "definition": "Catheter Tip, Suprapubic",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SPRPB",
+    "display": "Cathether Tip, Suprapubic",
+    "definition": "Cathether Tip, Suprapubic",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SPS",
+    "display": "Environmental, Spore Strip",
+    "definition": "Environmental, Spore Strip",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SPT",
+    "display": "Sputum",
+    "definition": "Sputum",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SPTC",
+    "display": "Sputum - coughed",
+    "definition": "Sputum - coughed",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SPTT",
+    "display": "Sputum - tracheal aspirate",
+    "definition": "Sputum - tracheal aspirate",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SPUT1",
+    "display": "Sputum, Simulated",
+    "definition": "Sputum, Simulated",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SPUTIN",
+    "display": "Sputum, Inducted",
+    "definition": "Sputum, Inducted",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SPUTSP",
+    "display": "Sputum, Spontaneous",
+    "definition": "Sputum, Spontaneous",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "STER",
+    "display": "Environmental, Sterrad",
+    "definition": "Environmental, Sterrad",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "STL",
+    "display": "Stool = Fecal",
+    "definition": "Stool = Fecal",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "STONE",
+    "display": "Stone, Kidney",
+    "definition": "Stone, Kidney",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SUBMA",
+    "display": "Abscess, Submandibular",
+    "definition": "Abscess, Submandibular",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SUBMX",
+    "display": "Abscess, Submaxillary",
+    "definition": "Abscess, Submaxillary",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SUMP",
+    "display": "Drainage, Sump",
+    "definition": "Drainage, Sump",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SUP",
+    "display": "Suprapubic Tap",
+    "definition": "Suprapubic Tap",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Product"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SUTUR",
+    "display": "Suture",
+    "definition": "Suture",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Object"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SWGZ",
+    "display": "Catheter Tip, Swan Gantz",
+    "definition": "Catheter Tip, Swan Gantz",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "SWT",
+    "display": "Sweat",
+    "definition": "Sweat",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "TASP",
+    "display": "Aspirate, Tracheal",
+    "definition": "Aspirate, Tracheal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Aspirate"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "TEAR",
+    "display": "Tears",
+    "definition": "Tears",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "THRB",
+    "display": "Thrombocyte (platelet)",
+    "definition": "Thrombocyte (platelet)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "TISS",
+    "display": "Tissue",
+    "definition": "Tissue",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "TISU",
+    "display": "Tissue ulcer",
+    "definition": "Tissue ulcer",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "TLC",
+    "display": "Cathether Tip, Triple Lumen",
+    "definition": "Cathether Tip, Triple Lumen",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "TRAC",
+    "display": "Site, Tracheostomy",
+    "definition": "Site, Tracheostomy",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Site"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "TRANS",
+    "display": "Transudate",
+    "definition": "Transudate",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "TSERU",
+    "display": "Serum, Trough",
+    "definition": "Serum, Trough",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "TSTES",
+    "display": "Abscess, Testicular",
+    "definition": "Abscess, Testicular",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "TTRA",
+    "display": "Aspirate, Transtracheal",
+    "definition": "Aspirate, Transtracheal",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Aspirate"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "TUBES",
+    "display": "Tubes",
+    "definition": "Tubes",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "TUMOR",
+    "display": "Tumor",
+    "definition": "Tumor",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "TZANC",
+    "display": "Smear, Tzanck",
+    "definition": "Smear, Tzanck",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "UDENT",
+    "display": "Source, Unidentified",
+    "definition": "Source, Unidentified",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "UMED",
+    "display": "Unknown Medicine",
+    "definition": "Unknown Medicine",
+    "property": [ {
+      "code": "comment",
+      "valueString": "for forensic and possibly chemistry testing"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "UR",
+    "display": "Urine",
+    "definition": "Urine",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "URC",
+    "display": "Urine clean catch",
+    "definition": "Urine clean catch",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "URINB",
+    "display": "Urine, Bladder Washings",
+    "definition": "Urine, Bladder Washings",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "URINC",
+    "display": "Urine, Catheterized",
+    "definition": "Urine, Catheterized",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "URINM",
+    "display": "Urine, Midstream",
+    "definition": "Urine, Midstream",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "URINN",
+    "display": "Urine, Nephrostomy",
+    "definition": "Urine, Nephrostomy",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "URINP",
+    "display": "Urine, Pedibag",
+    "definition": "Urine, Pedibag",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "URNS",
+    "display": "Urine sediment",
+    "definition": "Urine sediment",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "URT",
+    "display": "Urine catheter",
+    "definition": "Urine catheter",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "USCOP",
+    "display": "Urine, Cystoscopy",
+    "definition": "Urine, Cystoscopy",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Condition"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "USPEC",
+    "display": "Source, Unspecified",
+    "definition": "Source, Unspecified",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "USUB",
+    "display": "Unkown substance",
+    "definition": "Unkown substance",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "VASTIP",
+    "display": "Catheter Tip, Vas",
+    "definition": "Catheter Tip, Vas",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "VENT",
+    "display": "Catheter Tip, Ventricular",
+    "definition": "Catheter Tip, Ventricular",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Device"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "VITF",
+    "display": "Vitreous Fluid",
+    "definition": "Vitreous Fluid",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "VOM",
+    "display": "Vomitus",
+    "definition": "Vomitus",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5.1"
+    } ]
+  }, {
+    "code": "WASH",
+    "display": "Wash",
+    "definition": "Wash",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Product"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WASI",
+    "display": "Washing, e.g. bronchial washing",
+    "definition": "Washing, e.g. bronchial washing",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Product"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WAT",
+    "display": "Water",
+    "definition": "Water",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WB",
+    "display": "Blood, Whole",
+    "definition": "Blood, Whole",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Blood"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WBC",
+    "display": "Leukocytes",
+    "definition": "Leukocytes",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.8.2"
+    } ]
+  }, {
+    "code": "WEN",
+    "display": "Wen",
+    "definition": "Wen",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WICK",
+    "display": "Wick",
+    "definition": "Wick",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WND",
+    "display": "Wound",
+    "definition": "Wound",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WNDA",
+    "display": "Wound abscess",
+    "definition": "Wound abscess",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WNDD",
+    "display": "Wound drainage",
+    "definition": "Wound drainage",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WNDE",
+    "display": "Wound exudate",
+    "definition": "Wound exudate",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WORM",
+    "display": "Worm",
+    "definition": "Worm",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Object"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WRT",
+    "display": "Wart",
+    "definition": "Wart",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Tissue"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WWA",
+    "display": "Environmental, Water",
+    "definition": "Environmental, Water",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WWO",
+    "display": "Environmental, Water (Ocean)",
+    "definition": "Environmental, Water (Ocean)",
+    "property": [ {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  }, {
+    "code": "WWT",
+    "display": "Environmental, Water  (Tap)",
+    "definition": "Environmental, Water  (Tap)",
+    "property": [ {
+      "code": "comment",
+      "valueString": "Environment"
+    }, {
+      "code": "modified",
+      "valueDateTime": "2015-07-13"
+    }, {
+      "code": "versionIntroduced",
+      "valueString": "2.5"
+    } ]
+  } ]
+}
